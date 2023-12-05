@@ -386,7 +386,7 @@
 </ul>
 <h2 id="jinfo：实时查看和修改-JVM-配置参数"><a href="#jinfo：实时查看和修改-JVM-配置参数" class="headerlink" title="jinfo：实时查看和修改 JVM 配置参数"></a>jinfo：实时查看和修改 JVM 配置参数</h2><h3 id="基本情况-2"><a href="#基本情况-2" class="headerlink" title="基本情况"></a>基本情况</h3><p>jinfo（Configuration Info for Java）：查看虚拟机配置参数信息，也可用于调整虚拟机的配置参数。</p>
 <p>在很多情况下，Java 应用程序不会指定所有的 Java 虚拟机参数。而此时，开发人员可能不知道某一个具体的 Java 虚拟机参数的默认值。在这种情况下，可能需要通过查找文档获取某个参数的默认值。这个查找过程可能是非常艰难的。但是有了 jinfo 工具，开发人员可以很方便地找到 Java 虚拟机参数的当前值。</p>
-<img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220506174227578.png" alt="image-20220506174227578" style="zoom:67%;">
+<img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220506174227578.png" alt="image-20220506174227578" style="zoom:67%;">
 
 <p>官方帮助文档：<a target="_blank" rel="noopener" href="https://docs.oracle.com/en/java/javase/11/tools/jinfo.html">https://docs.oracle.com/en/java/javase/11/tools/jinfo.html</a></p>
 <h3 id="基本语法-2"><a href="#基本语法-2" class="headerlink" title="基本语法"></a>基本语法</h3><p><code>jinfo [options] pid</code></p>
@@ -428,7 +428,7 @@
 
 <p><strong>修改</strong></p>
 <p>jinfo 不仅可以查看运行时某一个 Java 虚拟机参数的实际取值，甚至可以在运行时修改部分参数，并使之立即生效。但是，并非所有参数都支持动态修改。参数只有被标记为 manageable 的 flag 可以被实时修改。其实，这个修改能力是极其有限的。</p>
-<img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220506175130045.png" alt="image-20220506175130045" style="zoom:67%;">
+<img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220506175130045.png" alt="image-20220506175130045" style="zoom:67%;">
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">针对 boolean 类型：jinfo -flag[+|-] 具体参数 PID。</span><br><span class="line"></span><br><span class="line">针对非 boolean 类型：jinfo -flag 具体参数=具体参数值 PID。</span><br></pre></td></tr></table></figure>
 
@@ -526,7 +526,7 @@
 <li>对象等待中，Object.wait() 或 TIMED_WAITING</li>
 <li>停止，Parked</li>
 </ul>
-<h3 id="基本语法-5"><a href="#基本语法-5" class="headerlink" title="基本语法"></a>基本语法</h3><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\JVM\image-20220506192000733.png" alt="image-20220506192000733" style="zoom:67%;">
+<h3 id="基本语法-5"><a href="#基本语法-5" class="headerlink" title="基本语法"></a>基本语法</h3><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\JVM\image-20220506192000733.png" alt="image-20220506192000733" style="zoom:67%;">
 
 <p>它的基本使用语法为：</p>
 <p><code>jstack option PID</code></p>
@@ -544,7 +544,7 @@
 
 <h2 id="jstatd：远程主机信息收集"><a href="#jstatd：远程主机信息收集" class="headerlink" title="jstatd：远程主机信息收集"></a>jstatd：远程主机信息收集</h2><p>之前的指令只涉及到监控本机的 Java 应用程序，而在这些工具中，一些监控工具也支持对远程计算机的监控（如 jps、jstat）。为了启用远程监控，则需要配合使用 jstatd 工具。</p>
 <p>命令 jstatd 是一个 RMI 服务端程序，它的作用相当于代理服务器，建立本地计算机与远程监控工具的通信。jstatd 服务器将本机的 Java 应用程序信息传递到远程计算机。</p>
-<img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220506193716253.png" alt="image-20220506193716253" style="zoom:67%;">
+<img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220506193716253.png" alt="image-20220506193716253" style="zoom:67%;">
 
 <h1 id="JVM监控及诊断工具-GUI篇"><a href="#JVM监控及诊断工具-GUI篇" class="headerlink" title="JVM监控及诊断工具-GUI篇"></a>JVM监控及诊断工具-GUI篇</h1><h2 id="工具概述"><a href="#工具概述" class="headerlink" title="工具概述"></a>工具概述</h2><p>使用上一章命令行工具或组合能帮您获取目标 Java 应用性能相关的基础信息，但它们存在下列局限：</p>
 <ol>
@@ -652,7 +652,7 @@
 <p>对比：考虑到生产环境中几乎不可能在线对其进行分析，大家都是采用离线分析，因此使用 jmap+MAT 工具是最常见的组合。</p>
 <p>方法三：使用 Visual VM 可以导出堆 dump 文件。</p>
 <p>方法四：使用 MAT 既可以打开一个已有的堆快照，也可以通过 MAT 直接从活动 Java 程序中导出堆快照。该功能将借助 jps 列出当前正在运行的 Java 进程，以供选择并获取快照。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513113547589.png" alt="image-20220513113547589"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513113547589.png" alt="image-20220513113547589"></p>
 <h3 id="分析堆-dump-文件"><a href="#分析堆-dump-文件" class="headerlink" title="分析堆 dump 文件"></a>分析堆 dump 文件</h3><p><strong>histogram</strong></p>
 <p>展示了各个类的实例数目以及这些实例的 Shallow Heap 或 Retained Heap 的总和。</p>
 <p>MAT 的直方图和 jmap 的 -histo 子命令一样，都能够展示各个类的实例数目以及这些实例的 Shallow Heap 总和。但是，MAT 的直方图还能够计算 Retained Heap，并支持基于实例数目或 Retained Heap 的排序方式（默认为 Shallow Heap）。</p>
@@ -685,11 +685,11 @@
 <li><p>对象实际大小</p>
 <p>另外一个常用的概念是对象的实际大小。这里，对象的实际大小定义为一个对象所能触及的所有对象的浅堆大小之和，也就是通常意义上我们说的对象大小。与深堆相比，似乎这个在日常开发中更为直观和被人接受。但实际上，这个概念和垃圾回收无关。</p>
 <p>下图显示了一个简单的对象引用关系图，对象 A 引用了 C 和 D，对象 B 引用了 C 和 E。那么对象 A 的浅堆大小只是 A 本身，不含 C 和 D，而 A 的实际大小为A、C、D 三者之和。而 A 的深堆大小为 A 与 D 之和，由于对象 C 还可以通过对象 B 访问到，因此不在对象 A 的深堆范围内。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513115746866.png" alt="image-20220513115746866"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513115746866.png" alt="image-20220513115746866"></p>
 </li>
 <li><p>练习</p>
 <p>看图理解 Retained Size</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513115845005.png" alt="image-20220513115845005"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513115845005.png" alt="image-20220513115845005"></p>
 <p>上图中，GC Roots 直接引用了 A 和 B 两个对象。</p>
 <p>A 对象的 Retained Size&#x3D;A 对象的 Shallow Size</p>
 <p>B 对象的 Retained Size&#x3D;B 对象的 Shallow Size + C 对象的 Shallow Size</p>
@@ -704,20 +704,20 @@
 <li>支配树的边与对象引用图的边不直接对应。</li>
 </ul>
 <p>如下图所示：左图表示对象引用图，右图表示左图所对应的支配树。对象 A 和 B 由根对象直接支配，由于在到对象 C 的路径中，可以经过 A，也可以经过 B，因此对象 C 的直接支配者也是根对象。对象 F 与对象 D 相互引用，因为到对象 F 的所有路径必然经过对象 D，因此，对象 D 是对象 F 的直接支配者。而到对象 D 的所有路径中，必然经过对象 C，即使是从对象 F 到对象 D 的引用，从根节点出发，也是经过对象 C 的，所以，对象 D 的直接支配者为对象 C。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513121457201.png" alt="image-20220513121457201"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513121457201.png" alt="image-20220513121457201"></p>
 <p>同理，对象 E 支配对象 G。到达对象 H 的可以通过对象 D，也可以通过对象 E，因此对象 D 和 E 都不能支配对象 H，而经过对象 C 既可以到达 D 也可以到达 E，因此对象 C 为对象 H 的直接支配者。</p>
 <p>在 MAT 中，单击工具栏上的对象支配树按钮，可以打开对象支配树视图。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513121643751.png" alt="image-20220513121643751"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513121643751.png" alt="image-20220513121643751"></p>
 <p>下图显示了对象支配树视图的一部分。该截图显示部分 Lily 学生的 history 队列的直接支配对象。即当 Lily 对象被回收，也会一并回收的所有对象。显然能被 3 或者 5 整除的网页不会出现在该列表中，因为它们同时被另外两名学生对象引用。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513121813229.png" alt="image-20220513121813229"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513121813229.png" alt="image-20220513121813229"></p>
 </li>
 </ul>
 <h2 id="再谈内存泄漏"><a href="#再谈内存泄漏" class="headerlink" title="再谈内存泄漏"></a>再谈内存泄漏</h2><h3 id="内存泄露的理解与分类"><a href="#内存泄露的理解与分类" class="headerlink" title="内存泄露的理解与分类"></a>内存泄露的理解与分类</h3><p><strong>何为内存泄漏（Memory Leak）</strong></p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513152746452.png" alt="image-20220513152746452"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513152746452.png" alt="image-20220513152746452"></p>
 <p>可达性分析算法来判断对象是否是不再使用的对象，本质都是判断一个对象是否还被引用。那么对于这种情况，由于代码的实现不同就会出现很多种内存泄漏问题（让 JVM 误以为此对象还在引用中，无法回收，造成内存泄漏）。</p>
 <p><strong>内存泄漏（Memory Leak）的理解</strong></p>
 <p>严格来说，只有对象不会再被程序用到了，但是 GC 又不能回收他们的情况，才叫内存泄漏。但实际情况很多时候一些不太好的实践（或疏忽）会导致对象的生命周期变得很长甚至导致 OOM，也可以叫做宽泛意义上的”内存泄漏”。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220513153747796.png" alt="image-20220513153747796"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220513153747796.png" alt="image-20220513153747796"></p>
 <p>对象 X 引用对象 Y，X 的生命周期比 Y 的生命周期长，那么当 Y 生命周期结束的时候，X 依然引用着 Y，这时候，垃圾回收器是不会回收对象 Y 的；如果对象 X 还引用着生命周期比较短的 A、B、C，对象 A 又引用着对象 A、B、C，这样就可能造成大量无用的对象不能被回收，进而占据了内存资源，造成内存泄漏，直到内存溢出。</p>
 <p><strong>内存泄漏和内存溢出的关系</strong></p>
 <ol>
@@ -845,7 +845,7 @@
 </ol>
 <h3 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h3><p><strong>下载与安装</strong></p>
 <p>下载地址：<a target="_blank" rel="noopener" href="https://www.ej-technologies.com/download/jprofiler/version_100">https://www.ej-technologies.com/download/jprofiler/version_100</a></p>
-<img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220514084020810.png" alt="image-20220514084020810" style="zoom:67%;">
+<img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/MyBlog\source\_posts\img\image-20220514084020810.png" alt="image-20220514084020810" style="zoom:67%;">
 
 <h3 id="具体使用"><a href="#具体使用" class="headerlink" title="具体使用"></a>具体使用</h3><p><strong>数据采集方式</strong></p>
 <p>JProfiler 数据采集方式分为两种：Sampling（样本采集）和 Instrumentation（重构模式）</p>
@@ -868,7 +868,7 @@
 <ul>
 <li><p>所有对象 All Objects</p>
 <p>显示所有加载的类的列表和在堆上分配的实例数。只有 Java 1.5（JVMTI）才会显示此视图。</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514085144635.png" alt="image-20220514085144635"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514085144635.png" alt="image-20220514085144635"></p>
 </li>
 <li><p>记录对象 Record Objects</p>
 <p>查看特定时间段对象的分配，并记录分配的调用堆栈。</p>
@@ -995,13 +995,13 @@
 <li>使用 stop\shutdown：关闭 Arthas 服务端，并退出所有客户端。</li>
 </ul>
 <h3 id="相关诊断指令"><a href="#相关诊断指令" class="headerlink" title="相关诊断指令"></a>相关诊断指令</h3><p><strong>基础指令</strong></p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514095949248.png" alt="image-20220514095949248"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514095949248.png" alt="image-20220514095949248"></p>
 <p><strong>JVM 相关</strong></p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514095959764.png" alt="image-20220514095959764"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514095959764.png" alt="image-20220514095959764"></p>
 <p><strong>class&#x2F;classloader 相关</strong></p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514100022509.png" alt="image-20220514100022509"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514100022509.png" alt="image-20220514100022509"></p>
 <p><strong>monitory&#x2F;watch&#x2F;trace 相关</strong></p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514100038644.png" alt="image-20220514100038644"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514100038644.png" alt="image-20220514100038644"></p>
 <p><strong>其它</strong></p>
 <p>使用 &gt; 将结果重写到日志文件，使用 &amp; 指令命令是后台运行，session 断开不影响任务执行（生命周期默认为 1 天）。</p>
 <p>jobs：列出所有 job。</p>
@@ -1056,7 +1056,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">jcmd &lt;PID&gt; JFR.stop name=SomeLabel</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>方式 3：JMC 的 JFR 插件</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514104007455.png" alt="image-20220514104007455"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514104007455.png" alt="image-20220514104007455"></p>
 </li>
 </ul>
 <p><strong>Java Flight Recorder 取样分析</strong></p>
@@ -1075,7 +1075,7 @@
 <h2 id="其他工具"><a href="#其他工具" class="headerlink" title="其他工具"></a>其他工具</h2><h3 id="Flame-Graphs（火焰图）"><a href="#Flame-Graphs（火焰图）" class="headerlink" title="Flame Graphs（火焰图）"></a>Flame Graphs（火焰图）</h3><p>在追求极致性能的场景下，了解你的程序运行过程中 CPU 在干什么很重要，火焰图就是一种非常直观的展示 CPU 在整个生命周期过程中时间分配的工具。</p>
 <p>火焰图对于现代的程序员不应该陌生，这个工具可以非常直观的显示出调用栈中的 CPU 消耗瓶颈。</p>
 <p>网上的关于 Java 火焰图的讲解大部分来自于 Brendan Gregg 的博客：<a target="_blank" rel="noopener" href="http://www.brendangregg.com/flamegraphs.html">http://www.brendangregg.com/flamegraphs.html</a></p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220514104938454.png" alt="image-20220514104938454"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220514104938454.png" alt="image-20220514104938454"></p>
 <p>火焰图，简单通过 x 轴横条宽度来度量时间指标，y 轴代表线程栈的层次。</p>
 <h3 id="Tprofiler"><a href="#Tprofiler" class="headerlink" title="Tprofiler"></a>Tprofiler</h3><ul>
 <li><p>案例</p>
@@ -1274,9 +1274,9 @@
 </li>
 </ul>
 <h3 id="垃圾收集器相关选项"><a href="#垃圾收集器相关选项" class="headerlink" title="垃圾收集器相关选项"></a>垃圾收集器相关选项</h3><p>7 款经典垃圾收集器与垃圾分代之间的关系：</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220516214737624.png" alt="image-20220516214737624"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220516214737624.png" alt="image-20220516214737624"></p>
 <p>垃圾收集器的组合关系：</p>
-<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-down/image-20220516214822458.png" alt="image-20220516214822458"></p>
+<p><img src="https://pic3.zhimg.com/v2-5221d33a65579aa32c80c04e3d08219a_b.webp" data-original="/master/2023/12/04/JVM-down/image-20220516214822458.png" alt="image-20220516214822458"></p>
 <ul>
 <li><p>查看默认垃圾收集器</p>
 <ul>
