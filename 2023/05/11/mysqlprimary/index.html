@@ -264,10 +264,10 @@
 <li>持久化(persistence)：<strong>把数据保存到可掉电式存储设备中以供之后使用</strong>。大多数情况下，特别是企业级应用，<strong>数据持久化意味着将内存中的数据保存到硬盘上加以”固化”</strong>，而持久化的实现过程大多通过各种关系数据库来完成。</li>
 <li>持久化的主要作用是<strong>将内存中的数据存储在关系型数据库中</strong>，当然也可以存储在磁盘文件、XML数据文件中。</li>
 </ul>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211020202152071.png" alt="image-20211020202152071" style="zoom:50%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211020202152071.png" alt="image-20211020202152071" style="zoom:50%;">
 
 <p>生活中的例子：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image_20211020132711.jpg"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image_20211020132711.jpg"></p>
 <h2 id="2-数据库与数据库管理系统"><a href="#2-数据库与数据库管理系统" class="headerlink" title="2. 数据库与数据库管理系统"></a>2. 数据库与数据库管理系统</h2><h3 id="2-1-数据库的相关概念"><a href="#2-1-数据库的相关概念" class="headerlink" title="2.1 数据库的相关概念"></a>2.1 数据库的相关概念</h3><table>
 <thead>
 <tr>
@@ -292,14 +292,14 @@
 </tbody></table>
 <h3 id="2-2-数据库与数据库管理系统的关系"><a href="#2-2-数据库与数据库管理系统的关系" class="headerlink" title="2.2 数据库与数据库管理系统的关系"></a>2.2 数据库与数据库管理系统的关系</h3><p>数据库管理系统(DBMS)可以管理多个数据库，一般开发人员会针对每一个应用创建一个数据库。为保存应用中实体的数据，一般会在数据库创建多个表，以保存程序中实体用户的数据。 </p>
 <p>数据库管理系统、数据库和表的关系如图所示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211013202511233.png" alt="image-20211013202511233"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210915112546261.png" alt="image-20210915112546261"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211013202511233.png" alt="image-20211013202511233"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210915112546261.png" alt="image-20210915112546261"></p>
 <h3 id="2-3-常见的数据库管理系统排名-DBMS"><a href="#2-3-常见的数据库管理系统排名-DBMS" class="headerlink" title="2.3 常见的数据库管理系统排名(DBMS)"></a>2.3 常见的数据库管理系统排名(DBMS)</h3><p>目前互联网上常见的数据库管理软件有Oracle、MySQL、MS SQL Server、DB2、PostgreSQL、Access、Sybase、Informix这几种。以下是2021年<strong>DB-Engines Ranking</strong> 对各数据库受欢迎程度进行调查后的统计结果：（查看数据库最新排名:<a target="_blank" rel="noopener" href="https://db-engines.com/en/ranking%EF%BC%89">https://db-engines.com/en/ranking）</a></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211013202815851.png" alt="image-20211013202815851"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211013202815851.png" alt="image-20211013202815851"></p>
 <p>。。。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211013202940798.png" alt="image-20211013202940798"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211013202940798.png" alt="image-20211013202940798"></p>
 <p>对应的走势图：（<a target="_blank" rel="noopener" href="https://db-engines.com/en/ranking_trend%EF%BC%89">https://db-engines.com/en/ranking_trend）</a></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211013203029492.png" alt="image-20211013203029492"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211013203029492.png" alt="image-20211013203029492"></p>
 <h3 id="2-4-常见的数据库介绍"><a href="#2-4-常见的数据库介绍" class="headerlink" title="2.4 常见的数据库介绍"></a>2.4 常见的数据库介绍</h3><p><strong>Oracle</strong></p>
 <p>1979 年，Oracle 2 诞生，它是第一个商用的 RDBMS（关系型数据库管理系统）。随着 Oracle 软件的名气越来越大，公司也改名叫 Oracle 公司。</p>
 <p>2007年，总计85亿美金收购BEA Systems。</p>
@@ -318,7 +318,7 @@
 <p>嵌入式的小型数据库，应用在手机端。 零配置，SQlite3不用安装，不用配置，不用启动，关闭或者配置数据库实例。当系统崩溃后不用做任何恢复操作，再下次使用数据库的时候自动恢复。</p>
 <p><strong>informix</strong></p>
 <p>IBM公司出品，取自Information 和Unix的结合，它是第一个被移植到Linux上的商业数据库产品。仅运行于unix&#x2F;linux平台，命令行操作。 性能较高，支持集群，适应于安全性要求极高的系统，尤其是银行，证券系统的应用。  </p>
-<h2 id="3-MySQL介绍"><a href="#3-MySQL介绍" class="headerlink" title="3. MySQL介绍"></a>3. MySQL介绍</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210829230656830.png" alt="image-20210829230656830"></p>
+<h2 id="3-MySQL介绍"><a href="#3-MySQL介绍" class="headerlink" title="3. MySQL介绍"></a>3. MySQL介绍</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210829230656830.png" alt="image-20210829230656830"></p>
 <h3 id="3-1-概述"><a href="#3-1-概述" class="headerlink" title="3.1 概述"></a>3.1 概述</h3><ul>
 <li>MySQL是一个<code>开放源代码的关系型数据库管理系统</code>，由瑞典MySQL AB（创始人Michael Widenius）公司1995年开发，迅速成为开源数据库的 No.1。</li>
 <li>2008被<code>Sun</code>收购（10亿美金），2009年Sun被<code>Oracle</code>收购。<code>MariaDB</code>应运而生。（MySQL 的创造者担心 MySQL 有闭源的风险，因此创建了 MySQL 的分支项目 MariaDB）</li>
@@ -332,9 +332,9 @@
 <li>MySQL可以允许运行于多个系统上，并且支持多种语言。这些编程语言包括C、C++、Python、Java、Perl、PHP和Ruby等。</li>
 </ul>
 <h3 id="3-2-MySQL发展史重大事件"><a href="#3-2-MySQL发展史重大事件" class="headerlink" title="3.2 MySQL发展史重大事件"></a>3.2 MySQL发展史重大事件</h3><p>MySQL的历史就是整个互联网的发展史。互联网业务从社交领域、电商领域到金融领域的发展，推动着应用对数据库的需求提升，对传统的数据库服务能力提出了挑战。高并发、高性能、高可用、轻资源、易维护、易扩展的需求，促进了MySQL的长足发展。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210730161043856.png" alt="image-20210730161043856"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210730161043856.png" alt="image-20210730161043856"></p>
 <h3 id="1-4-关于MySQL-8-0"><a href="#1-4-关于MySQL-8-0" class="headerlink" title="1.4 关于MySQL 8.0"></a>1.4 关于MySQL 8.0</h3><p><code>MySQL从5.7版本直接跳跃发布了8.0版本</code>，可见这是一个令人兴奋的里程碑版本。MySQL 8版本在功能上做了显著的改进与增强，开发者对MySQL的源代码进行了重构，最突出的一点是多MySQL Optimizer优化器进行了改进。不仅在速度上得到了改善，还为用户带来了更好的性能和更棒的体验。</p>
-<h3 id="1-5-Why-choose-MySQL"><a href="#1-5-Why-choose-MySQL" class="headerlink" title="1.5 Why choose MySQL?"></a>1.5 Why choose MySQL?</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211013210429011.png" alt="image-20211013210429011"></p>
+<h3 id="1-5-Why-choose-MySQL"><a href="#1-5-Why-choose-MySQL" class="headerlink" title="1.5 Why choose MySQL?"></a>1.5 Why choose MySQL?</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211013210429011.png" alt="image-20211013210429011"></p>
 <p>为什么如此多的厂商要选用MySQL？大概总结的原因主要有以下几点：	</p>
 <ol>
 <li><p>   开放源代码，使用成本低。</p>
@@ -353,7 +353,7 @@
 <h2 id="4-RDBMS-与-非RDBMS"><a href="#4-RDBMS-与-非RDBMS" class="headerlink" title="4. RDBMS 与 非RDBMS"></a>4. RDBMS 与 非RDBMS</h2><p>从排名中我们能看出来，关系型数据库绝对是 DBMS 的主流，其中使用最多的 DBMS 分别是 Oracle、MySQL 和 SQL Server。这些都是关系型数据库（RDBMS）。</p>
 <h3 id="4-1-关系型数据库-RDBMS"><a href="#4-1-关系型数据库-RDBMS" class="headerlink" title="4.1 关系型数据库(RDBMS)"></a>4.1 关系型数据库(RDBMS)</h3><h4 id="4-1-1-实质"><a href="#4-1-1-实质" class="headerlink" title="4.1.1 实质"></a>4.1.1 实质</h4><ul>
 <li><p>这种类型的数据库是<code>最古老</code>的数据库类型，关系型数据库模型是把复杂的数据结构归结为简单的<code>二元关系</code>（即二维表格形式）。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211020145811031.png" alt="image-20211020145811031"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211020145811031.png" alt="image-20211020145811031"></p>
 </li>
 <li><p>关系型数据库以<code>行(row)</code>和<code>列(column)</code>的形式存储数据，以便于用户理解。这一系列的行和列被称为<code>表(table)</code>，一组表组成了一个库(database)。</p>
 </li>
@@ -362,7 +362,7 @@
 <li><p>SQL 就是关系型数据库的查询语言。</p>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914235413708.png" alt="image-20210914235413708"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914235413708.png" alt="image-20210914235413708"></p>
 <h4 id="4-1-2-优势"><a href="#4-1-2-优势" class="headerlink" title="4.1.2 优势"></a>4.1.2 优势</h4><ul>
 <li><strong>复杂查询</strong><br>可以用SQL语句方便的在一个表以及多个表之间做非常复杂的数据查询。</li>
 <li><strong>事务支持</strong><br>使得对于安全性能很高的数据访问要求得以实现。</li>
@@ -373,7 +373,7 @@
 <p><strong>键值型数据库</strong></p>
 <p>键值型数据库通过 Key-Value 键值的方式来存储数据，其中 Key 和 Value 可以是简单的对象，也可以是复杂的对象。Key 作为唯一的标识符，优点是查找速度快，在这方面明显优于关系型数据库，缺点是无法像关系型数据库一样使用条件过滤（比如 WHERE），如果你不知道去哪里找数据，就要遍历所有的键，这就会消耗大量的计算。</p>
 <p>键值型数据库典型的使用场景是作为<code>内存缓存</code>。<code>Redis </code>是最流行的键值型数据库。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211020172958427.png" alt="image-20211020172958427"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211020172958427.png" alt="image-20211020172958427"></p>
 <p><strong>文档型数据库</strong></p>
 <p>此类数据库可存放并获取文档，可以是XML、JSON等格式。在数据库中文档作为处理信息的基本单位，一个文档就相当于一条记录。文档数据库所存放的文档，就相当于键值数据库所存放的“值”。MongoDB 是最流行的文档型数据库。此外，还有CouchDB等。</p>
 <p><strong>搜索引擎数据库</strong></p>
@@ -381,11 +381,11 @@
 <p>典型产品：Solr、Elasticsearch、Splunk 等。</p>
 <p><strong>列式数据库</strong></p>
 <p>列式数据库是相对于行式存储的数据库，Oracle、MySQL、SQL Server 等数据库都是采用的行式存储（Row-based），而列式数据库是将数据按照列存储到数据库中，这样做的好处是可以大量降低系统的 I&#x2F;O，适合于分布式文件系统，不足在于功能相对有限。典型产品：HBase等。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211020173921726.png" alt="image-20211020173921726"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211020173921726.png" alt="image-20211020173921726"></p>
 <p><strong>图形数据库</strong></p>
 <p>图形数据库，利用了图这种数据结构存储了实体（对象）之间的关系。图形数据库最典型的例子就是社交网络中人与人的关系，数据模型主要是以节点和边（关系）来实现，特点在于能高效地解决复杂的关系问题。</p>
 <p>图形数据库顾名思义，就是一种存储图形关系的数据库。它利用了图这种数据结构存储了实体（对象）之间的关系。关系型数据用于存储明确关系的数据，但对于复杂关系的数据存储却有些力不从心。如社交网络中人物之间的关系，如果用关系型数据库则非常复杂，用图形数据库将非常简单。典型产品：Neo4J、InfoGrid等。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211020180934455.png" alt="image-20211020180934455" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211020180934455.png" alt="image-20211020180934455" style="zoom:80%;">
 
 <h4 id="4-2-3-NoSQL的演变"><a href="#4-2-3-NoSQL的演变" class="headerlink" title="4.2.3 NoSQL的演变"></a>4.2.3 NoSQL的演变</h4><p>由于 SQL 一直称霸 DBMS，因此许多人在思考是否有一种数据库技术能远离 SQL，于是 NoSQL 诞生了，但是随着发展却发现越来越离不开 SQL。到目前为止 NoSQL 阵营中的 DBMS 都会有实现类似 SQL 的功能。下面是“NoSQL”这个名词在不同时期的诠释，从这些释义的变化中可以看出 <code>NoSQL 功能的演变</code>：</p>
 <p>1970：NoSQL &#x3D; We have no SQL</p>
@@ -411,7 +411,7 @@
 <li><p>一个实体集（class）对应于数据库中的一个表（table），一个实体（instance）则对应于数据库表中的一行（row），也称为一条记录（record）。一个属性（attribute）对应于数据库表中的一列（column），也称为一个字段（field）。</p>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914235450032-1634141235163.png" alt="image-20210914235450032"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914235450032-1634141235163.png" alt="image-20210914235450032"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ORM思想 (Object Relational Mapping)体现：</span><br><span class="line">数据库中的一个表  &lt;---&gt; Java或Python中的一个类</span><br><span class="line">表中的一条数据  &lt;---&gt; 类中的一个对象（或实体）</span><br><span class="line">表中的一个列  &lt;----&gt; 类中的一个字段、属性(field)</span><br></pre></td></tr></table></figure>
 
 <h3 id="5-2-表的关联关系"><a href="#5-2-表的关联关系" class="headerlink" title="5.2 表的关联关系"></a>5.2 表的关联关系</h3><ul>
@@ -437,7 +437,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914235534452.png" alt="image-20210914235534452"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914235534452.png" alt="image-20210914235534452"></p>
 <h4 id="5-2-2-一对多关系（one-to-many）"><a href="#5-2-2-一对多关系（one-to-many）" class="headerlink" title="5.2.2 一对多关系（one-to-many）"></a>5.2.2 一对多关系（one-to-many）</h4><ul>
 <li>常见实例场景：<code>客户表和订单表</code>，<code>分类表和商品表</code>，<code>部门表和员工表</code>。</li>
 <li>举例：<ul>
@@ -449,11 +449,11 @@
 </li>
 <li>一对多建表原则：在从表(多方)创建一个字段，字段作为外键指向主表(一方)的主键</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210915001013524.png" alt="image-20210915001013524"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914235610597.png" alt="image-20210914235610597"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210915084623432.png" alt="image-20210915084623432"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210915001013524.png" alt="image-20210915001013524"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914235610597.png" alt="image-20210914235610597"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210915084623432.png" alt="image-20210915084623432"></p>
 <h4 id="5-2-3-多对多（many-to-many）"><a href="#5-2-3-多对多（many-to-many）" class="headerlink" title="5.2.3 多对多（many-to-many）"></a>5.2.3 多对多（many-to-many）</h4><p>要表示多对多关系，必须创建第三个表，该表通常称为<code>联接表</code>，它将多对多关系划分为两个一对多关系。将这两个表的主键都插入到第三个表中。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210915001048215.png" alt="image-20210915001048215"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210915001048215.png" alt="image-20210915001048215"></p>
 <ul>
 <li><p><strong>举例1：学生-课程</strong></p>
 <ul>
@@ -474,38 +474,38 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914235637068.png" alt="image-20210914235637068"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914235637068.png" alt="image-20210914235637068"></p>
 <ul>
 <li><strong>举例3：用户-角色</strong></li>
 <li>多对多关系建表原则：需要创建第三张表，中间表中至少两个字段，这两个字段分别作为外键指向各自一方的主键。</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210915084707586.png" alt="image-20210915084707586"></p>
-<h4 id="5-3-4-自我引用-Self-reference"><a href="#5-3-4-自我引用-Self-reference" class="headerlink" title="5.3.4 自我引用(Self reference)"></a>5.3.4 自我引用(Self reference)</h4><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914235651997.png" alt="image-20210914235651997"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210915084707586.png" alt="image-20210915084707586"></p>
+<h4 id="5-3-4-自我引用-Self-reference"><a href="#5-3-4-自我引用-Self-reference" class="headerlink" title="5.3.4 自我引用(Self reference)"></a>5.3.4 自我引用(Self reference)</h4><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914235651997.png" alt="image-20210914235651997"></p>
 <h1 id="第02章-MySQL环境搭建"><a href="#第02章-MySQL环境搭建" class="headerlink" title="第02章_MySQL环境搭建"></a>第02章_MySQL环境搭建</h1><p>讲师：尚硅谷 宋红康（江湖人称：康师傅）</p>
 <p>官网：<a target="_blank" rel="noopener" href="http://www.atguigu.com/">http://www.atguigu.com</a></p>
 <hr>
 <h2 id="1-MySQL的卸载"><a href="#1-MySQL的卸载" class="headerlink" title="1. MySQL的卸载"></a>1. MySQL的卸载</h2><h3 id="步骤1：停止MySQL服务"><a href="#步骤1：停止MySQL服务" class="headerlink" title="步骤1：停止MySQL服务"></a>步骤1：停止MySQL服务</h3><p>在卸载之前，先停止MySQL8.0的服务。按键盘上的“Ctrl + Alt + Delete”组合键，打开“任务管理器”对话框，可以在“服务”列表找到“MySQL8.0”的服务，如果现在“正在运行”状态，可以右键单击服务，选择“停止”选项停止MySQL8.0的服务，如图所示。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014153604802.png" alt="image-20211014153604802"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014153604802.png" alt="image-20211014153604802"></p>
 <h3 id="步骤2：软件的卸载"><a href="#步骤2：软件的卸载" class="headerlink" title="步骤2：软件的卸载"></a>步骤2：软件的卸载</h3><p><strong>方式1：通过控制面板方式</strong></p>
 <p>卸载MySQL8.0的程序可以和其他桌面应用程序一样直接在“控制面板”选择“卸载程序”，并在程序列表中找到MySQL8.0服务器程序，直接双击卸载即可，如图所示。这种方式删除，数据目录下的数据不会跟着删除。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014153657668.png" alt="image-20211014153657668"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014153657668.png" alt="image-20211014153657668"></p>
 <p><strong>方式2：通过360或电脑管家等软件卸载</strong></p>
 <p>略</p>
 <p><strong>方式3：通过安装包提供的卸载功能卸载</strong></p>
 <p>你也可以通过安装向导程序进行MySQL8.0服务器程序的卸载。</p>
 <p>① 再次双击下载的mysql-installer-community-8.0.26.0.msi文件，打开安装向导。安装向导会自动检测已安装的MySQL服务器程序。</p>
 <p>② 选择要卸载的MySQL服务器程序，单击“Remove”（移除），即可进行卸载。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014153722683.png" alt="image-20211014153722683"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014153722683.png" alt="image-20211014153722683"></p>
 <p>③ 单击“Next”（下一步）按钮，确认卸载。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014153747283.png" alt="image-20211014153747283"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014153747283.png" alt="image-20211014153747283"></p>
 <p>④ 弹出是否同时移除数据目录选择窗口。如果想要同时删除MySQL服务器中的数据，则勾选“Remove the data directory”，如图所示。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014154112574.png" alt="image-20211014154112574" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014154112574.png" alt="image-20211014154112574" style="zoom:80%;">
 
 <p>⑤ 执行卸载。单击“Execute”（执行）按钮进行卸载。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014154006530.png" alt="image-20211014154006530" style="zoom:90%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014154006530.png" alt="image-20211014154006530" style="zoom:90%;">
 
 <p>⑥ 完成卸载。单击“Finish”（完成）按钮即可。如果想要同时卸载MySQL8.0的安装向导程序，勾选“Yes，Uninstall MySQL Installer”即可，如图所示。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014154046268.png" alt="image-20211014154046268" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014154046268.png" alt="image-20211014154046268" style="zoom:80%;">
 
 <h3 id="步骤3：残余文件的清理"><a href="#步骤3：残余文件的清理" class="headerlink" title="步骤3：残余文件的清理"></a>步骤3：残余文件的清理</h3><p>如果再次安装不成功，可以卸载后对残余文件进行清理后再安装。</p>
 <p>（1）服务目录：mysql服务的安装目录</p>
@@ -524,7 +524,7 @@
 </blockquote>
 <h3 id="步骤5：删除环境变量配置"><a href="#步骤5：删除环境变量配置" class="headerlink" title="步骤5：删除环境变量配置"></a>步骤5：删除环境变量配置</h3><p>找到path环境变量，将其中关于mysql的环境变量删除，<strong>切记不要全部删除。</strong></p>
 <p>例如：删除  D:\develop_tools\mysql\MySQLServer8.0.26\bin;  这个部分</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1575694476072.png" alt="1575694476072"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1575694476072.png" alt="1575694476072"></p>
 <h2 id="2-MySQL的下载、安装、配置"><a href="#2-MySQL的下载、安装、配置" class="headerlink" title="2. MySQL的下载、安装、配置"></a>2. MySQL的下载、安装、配置</h2><h3 id="2-1-MySQL的4大版本"><a href="#2-1-MySQL的4大版本" class="headerlink" title="2.1 MySQL的4大版本"></a>2.1 MySQL的4大版本</h3><blockquote>
 <ul>
 <li><p><strong>MySQL Community Server 社区版本</strong>，开源免费，自由下载，但不提供官方技术支持，适用于大多数普通用户。</p>
@@ -548,18 +548,18 @@
 <p>官网：<a target="_blank" rel="noopener" href="https://www.mysql.com/">https://www.mysql.com</a></p>
 <p><strong>2. 打开官网，点击DOWNLOADS</strong></p>
 <p>然后，点击<code>MySQL Community(GPL) Downloads</code></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210817185920150.png" alt="image-20210817185920150"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210817185920150.png" alt="image-20210817185920150"></p>
 <p><strong>3. 点击 MySQL Community Server</strong></p>
- <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20210817185955123.png" alt="image-20210817185955123" style="zoom:80%;">
+ <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210817185955123.png" alt="image-20210817185955123" style="zoom:80%;">
 
 <p><strong>4. 在General Availability(GA) Releases中选择适合的版本</strong></p>
 <p>Windows平台下提供两种安装文件：MySQL二进制分发版（.msi安装文件）和免安装版（.zip压缩文件）。一般来讲，应当使用二进制分发版，因为该版本提供了图形化的安装向导过程，比其他的分发版使用起来要简单，不再需要其他工具启动就可以运行MySQL。</p>
 <ul>
 <li>这里在Windows 系统下推荐下载<code>MSI安装程序</code>；点击<code>Go to Download Page</code>进行下载即可</li>
 </ul>
- <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20210727192819147.png" alt="image-20210727192819147" style="zoom:67%;">
+ <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210727192819147.png" alt="image-20210727192819147" style="zoom:67%;">
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014163001964.png" alt="image-20211014163001964"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014163001964.png" alt="image-20211014163001964"></p>
 <ul>
 <li>Windows下的MySQL8.0安装有两种安装程序<ul>
 <li><code>mysql-installer-web-community-8.0.26.0.msi</code> 下载程序大小：2.4M；安装时需要联网安装组件。</li>
@@ -568,37 +568,37 @@
 </li>
 <li>如果安装MySQL5.7版本的话，选择<code>Archives</code>，接着选择MySQL5.7的相应版本即可。这里下载最近期的MySQL5.7.34版本。</li>
 </ul>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014163228051.png" alt="image-20211014163228051"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014163353156.png" alt="image-20211014163353156"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014163228051.png" alt="image-20211014163228051"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014163353156.png" alt="image-20211014163353156"></p>
 <h3 id="2-3-MySQL8-0-版本的安装"><a href="#2-3-MySQL8-0-版本的安装" class="headerlink" title="2.3 MySQL8.0 版本的安装"></a>2.3 MySQL8.0 版本的安装</h3><p>MySQL下载完成后，找到下载文件，双击进行安装，具体操作步骤如下。</p>
 <p>步骤1：双击下载的mysql-installer-community-8.0.26.0.msi文件，打开安装向导。</p>
 <p>步骤2：打开“Choosing a Setup Type”（选择安装类型）窗口，在其中列出了5种安装类型，分别是Developer Default（默认安装类型）、Server only（仅作为服务器）、Client only（仅作为客户端）、Full（完全安装）、Custom（自定义安装）。这里选择“Custom（自定义安装）”类型按钮，单击“Next(下一步)”按钮。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014170553535.png" alt="image-20211014170553535" style="zoom:90%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014170553535.png" alt="image-20211014170553535" style="zoom:90%;">
 
 <p>步骤3：打开“Select Products” （选择产品）窗口，可以定制需要安装的产品清单。例如，选择“MySQL Server 8.0.26-X64”后，单击“→”添加按钮，即可选择安装MySQL服务器，如图所示。采用通用的方法，可以添加其他你需要安装的产品。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014170638699.png" alt="image-20211014170638699" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014170638699.png" alt="image-20211014170638699" style="zoom:80%;">
 
 <p>此时如果直接“Next”（下一步），则产品的安装路径是默认的。如果想要自定义安装目录，则可以选中对应的产品，然后在下面会出现“Advanced Options”（高级选项）的超链接。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014170814386.png" alt="image-20211014170814386" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014170814386.png" alt="image-20211014170814386" style="zoom:80%;">
 
 <p>单击“Advanced Options”（高级选项）则会弹出安装目录的选择窗口，如图所示，此时你可以分别设置MySQL的服务程序安装目录和数据存储目录。如果不设置，默认分别在C盘的Program Files目录和ProgramData目录（这是一个隐藏目录）。如果自定义安装目录，请避免“中文”目录。另外，建议服务目录和数据目录分开存放。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014170857263.png" alt="image-20211014170857263" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014170857263.png" alt="image-20211014170857263" style="zoom:80%;">
 
 <p>步骤4：在上一步选择好要安装的产品之后，单击“Next”（下一步）进入确认窗口，如图所示。单击“Execute”（执行）按钮开始安装。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014170934889.png" alt="image-20211014170934889" style="zoom:90%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014170934889.png" alt="image-20211014170934889" style="zoom:90%;">
 
 <p>步骤5：安装完成后在“Status”（状态）列表下将显示“Complete”（安装完成），如图所示。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014171002259.png" alt="image-20211014171002259" style="zoom:90%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014171002259.png" alt="image-20211014171002259" style="zoom:90%;">
 
 <h3 id="2-4-配置MySQL8-0"><a href="#2-4-配置MySQL8-0" class="headerlink" title="2.4 配置MySQL8.0"></a>2.4 配置MySQL8.0</h3><p>MySQL安装之后，需要对服务器进行配置。具体的配置步骤如下。</p>
 <p>步骤1：在上一个小节的最后一步，单击“Next”（下一步）按钮，就可以进入产品配置窗口。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image002-1634203188594.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image002-1634203188594.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤2：单击“Next”（下一步）按钮，进入MySQL服务器类型配置窗口，如图所示。端口号一般选择默认端口号3306。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image004-1634203188595.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image004-1634203188595.jpg" alt="img" style="zoom:80%;">
 
 <p>其中，“Config Type”选项用于设置服务器的类型。单击该选项右侧的下三角按钮，即可查看3个选项，如图所示。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image006-1634203188595.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image006-1634203188595.jpg" alt="img" style="zoom:80%;">
 
 <ul>
 <li><p><code>Development Machine（开发机器）</code>：该选项代表典型个人用桌面工作站。此时机器上需要运行多个应用程序，那么MySQL服务器将占用最少的系统资源。</p>
@@ -609,26 +609,26 @@
 </li>
 </ul>
 <p>步骤3：单击“Next”（下一步）按钮，打开设置授权方式窗口。其中，上面的选项是MySQL8.0提供的新的授权方式，采用SHA256基础的密码加密方法；下面的选项是传统授权方法（保留5.x版本兼容性）。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image008-1634203188595.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image008-1634203188595.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤4：单击“Next”（下一步）按钮，打开设置服务器root超级管理员的密码窗口，如图所示，需要输入两次同样的登录密码。也可以通过“Add User”添加其他用户，添加其他用户时，需要指定用户名、允许该用户名在哪台&#x2F;哪些主机上登录，还可以指定用户角色等。此处暂不添加用户，用户管理在MySQL高级特性篇中讲解。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image010-1634203188595.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image010-1634203188595.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤5：单击“Next”（下一步）按钮，打开设置服务器名称窗口，如图所示。该服务名会出现在Windows服务列表中，也可以在命令行窗口中使用该服务名进行启动和停止服务。本书将服务名设置为“MySQL80”。如果希望开机自启动服务，也可以勾选“Start the MySQL Server at System Startup”选项（推荐）。</p>
 <p>下面是选择以什么方式运行服务？可以选择“Standard System Account”(标准系统用户)或者“Custom User”(自定义用户)中的一个。这里推荐前者。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image012-1634203188596.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image012-1634203188596.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤6：单击“Next”（下一步）按钮，打开确认设置服务器窗口，单击“Execute”（执行）按钮。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image014-1634203188596.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image014-1634203188596.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤7：完成配置，如图所示。单击“Finish”（完成）按钮，即可完成服务器的配置。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image016.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image016.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤8：如果还有其他产品需要配置，可以选择其他产品，然后继续配置。如果没有，直接选择“Next”（下一步），直接完成整个安装和配置过程。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image018.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image018.jpg" alt="img" style="zoom:80%;">
 
 <p>步骤9：结束安装和配置。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image020.jpg" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image020.jpg" alt="img" style="zoom:80%;">
 
 <h3 id="2-5-配置MySQL8-0-环境变量"><a href="#2-5-配置MySQL8-0-环境变量" class="headerlink" title="2.5 配置MySQL8.0 环境变量"></a>2.5 配置MySQL8.0 环境变量</h3><p>如果不配置MySQL环境变量，就不能在命令行直接输入MySQL登录命令。下面说如何配置MySQL的环境变量：</p>
 <p>步骤1：在桌面上右击【此电脑】图标，在弹出的快捷菜单中选择【属性】菜单命令。<br>步骤2：打开【系统】窗口，单击【高级系统设置】链接。<br>步骤3：打开【系统属性】对话框，选择【高级】选项卡，然后单击【环境变量】按钮。<br>步骤4：打开【环境变量】对话框，在系统变量列表中选择path变量。<br>步骤5：单击【编辑】按钮，在【编辑环境变量】对话框中，将MySQL应用程序的bin目录（C:\Program Files\MySQL\MySQL Server 8.0\bin）添加到变量值中，用分号将其与其他路径分隔开。<br>步骤6：添加完成之后，单击【确定】按钮，这样就完成了配置path变量的操作，然后就可以直接输入MySQL命令来登录数据库了。</p>
@@ -644,13 +644,13 @@
 <h3 id="2-7-安装失败问题"><a href="#2-7-安装失败问题" class="headerlink" title="2.7 安装失败问题"></a>2.7 安装失败问题</h3><p>MySQL的安装和配置是一件非常简单的事，但是在操作过程中也可能出现问题，特别是初学者。</p>
 <p><strong>问题1：无法打开MySQL8.0软件安装包或者安装过程中失败，如何解决？</strong></p>
 <p>在运行MySQL8.0软件安装包之前，用户需要确保系统中已经安装了.Net Framework相关软件，如果缺少此软件，将不能正常地安装MySQL8.0软件。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image002.gif" alt="img" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image002.gif" alt="img" style="zoom:80%;">
 
 <p>解决方案：到这个地址<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=42642%E4%B8%8B%E8%BD%BDMicrosoft">https://www.microsoft.com/en-us/download/details.aspx?id=42642下载Microsoft</a> .NET Framework 4.5并安装后，再去安装MySQL。</p>
 <p>另外，还要确保Windows Installer正常安装。windows上安装mysql8.0需要操作系统提前已安装好Microsoft Visual C++ 2015-2019。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image004.gif" alt="img" style="zoom:75%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image004.gif" alt="img" style="zoom:75%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/clip_image006.gif" alt="img" style="zoom:75%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/clip_image006.gif" alt="img" style="zoom:75%;">
 
 <p>解决方案同样是，提前到微软官网<a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0%EF%BC%8C%E4%B8%8B%E8%BD%BD%E7%9B%B8%E5%BA%94%E7%9A%84%E7%8E%AF%E5%A2%83%E3%80%82">https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0，下载相应的环境。</a></p>
 <p><strong>问题2：卸载重装MySQL失败？</strong></p>
@@ -672,10 +672,10 @@
 <li><p>步骤2：找到MySQL80（点击鼠标右键）→ 启动或停止（点击）</p>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211014183908375.png" alt="image-20211014183908375"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014183908375.png" alt="image-20211014183908375"></p>
 <h4 id="方式2：使用命令行工具"><a href="#方式2：使用命令行工具" class="headerlink" title="方式2：使用命令行工具"></a>方式2：使用命令行工具</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 启动 MySQL 服务命令：</span><br><span class="line">net start MySQL服务名</span><br><span class="line"></span><br><span class="line"># 停止 MySQL 服务命令：</span><br><span class="line">net stop MySQL服务名</span><br></pre></td></tr></table></figure>
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014184037414.png" alt="image-20211014184037414" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014184037414.png" alt="image-20211014184037414" style="zoom:80%;">
 
 <p>说明：</p>
 <ol>
@@ -686,7 +686,7 @@
 </ol>
 <h3 id="3-2-自带客户端的登录与退出"><a href="#3-2-自带客户端的登录与退出" class="headerlink" title="3.2 自带客户端的登录与退出"></a>3.2 自带客户端的登录与退出</h3><p>当MySQL服务启动完成后，便可以通过客户端来登录MySQL数据库。注意：确认服务是开启的。</p>
 <h4 id="登录方式1：MySQL自带客户端"><a href="#登录方式1：MySQL自带客户端" class="headerlink" title="登录方式1：MySQL自带客户端"></a>登录方式1：MySQL自带客户端</h4><p>开始菜单 → 所有程序 → MySQL → MySQL 8.0 Command Line Client</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014184425147.png" alt="image-20211014184425147" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014184425147.png" alt="image-20211014184425147" style="zoom:80%;">
 
 <blockquote>
 <p>说明：仅限于root用户</p>
@@ -701,7 +701,7 @@
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h localhost -P 3306 -u root -pabc123  # 这里我设置的root用户的密码是abc123</span><br></pre></td></tr></table></figure>
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014185035137.png" alt="image-20211014185035137" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014185035137.png" alt="image-20211014185035137" style="zoom:80%;">
 
 <p>注意：</p>
 <p>（1）-p与密码之间不能有空格，其他参数名与参数值之间可以有空格也可以没有空格。如：</p>
@@ -804,9 +804,9 @@
 <p>步骤4：查看编码命令</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;character_%&#x27;</span>;</span><br><span class="line"><span class="keyword">show</span> variables <span class="keyword">like</span> <span class="string">&#x27;collation_%&#x27;</span>;</span><br></pre></td></tr></table></figure>
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/MySQL编码1.jpg" style="zoom:90%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/MySQL编码1.jpg" style="zoom:90%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/MySQL编码2.jpg" style="zoom:90%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/MySQL编码2.jpg" style="zoom:90%;">
 
 <ul>
 <li>如果是以上配置就说明对了。接着我们就可以新创建数据库、新创建数据表，接着添加包含中文的数据了。</li>
@@ -818,13 +818,13 @@
 <p>下载地址：<a target="_blank" rel="noopener" href="http://dev.mysql.com/downloads/workbench/%E3%80%82">http://dev.mysql.com/downloads/workbench/。</a></p>
 <p>使用：</p>
 <p>首先，我们点击 Windows 左下角的“开始”按钮，如果你是 Win10 系统，可以直接看到所有程序。接着，找到“MySQL”，点开，找到“MySQL Workbench 8.0 CE”。点击打开 Workbench，如下图所示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211007153522427.png" alt="image-20211007153522427"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211007153522427.png" alt="image-20211007153522427"></p>
 <p>左下角有个本地连接，点击，录入 Root 的密码，登录本地 MySQL 数据库服务器，如下图所示：</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195108502.png" alt="image-20211014195108502" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195108502.png" alt="image-20211014195108502" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195129219.png" alt="image-20211014195129219" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195129219.png" alt="image-20211014195129219" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195142849.png" alt="image-20211014195142849" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195142849.png" alt="image-20211014195142849" style="zoom:80%;">
 
 <p>这是一个图形化的界面，我来给你介绍下这个界面。 </p>
 <ul>
@@ -837,34 +837,34 @@
 </ul>
 <p>好了，下面我们就用 Workbench 实际创建一个数据库，并且导入一个 Excel 数据文件， 来生成一个数据表。数据表是存储数据的载体，有了数据表以后，我们就能对数据进行操作了。 </p>
 <h3 id="工具2-Navicat"><a href="#工具2-Navicat" class="headerlink" title="工具2. Navicat"></a>工具2. Navicat</h3><p>Navicat MySQL是一个强大的MySQL数据库服务器管理和开发工具。它可以与任何3.21或以上版本的MySQL一起工作，支持触发器、存储过程、函数、事件、视图、管理用户等，对于新手来说易学易用。其精心设计的图形用户界面（GUI）可以让用户用一种安全简便的方式来快速方便地创建、组织、访问和共享信息。Navicat支持中文，有免费版本提供。<br>下载地址：<a target="_blank" rel="noopener" href="http://www.navicat.com/%E3%80%82">http://www.navicat.com/。</a></p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1557378069584.png" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1557378069584.png" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20210913180359685.png" alt="image-20210913180359685" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210913180359685.png" alt="image-20210913180359685" style="zoom:80%;">
 
 <h3 id="工具3-SQLyog"><a href="#工具3-SQLyog" class="headerlink" title="工具3. SQLyog"></a>工具3. SQLyog</h3><p>SQLyog 是业界著名的 Webyog 公司出品的一款简洁高效、功能强大的图形化 MySQL 数据库管理工具。这款工具是使用C++语言开发的。该工具可以方便地创建数据库、表、视图和索引等，还可以方便地进行插入、更新和删除等操作，同时可以方便地进行数据库、数据表的备份和还原。该工具不仅可以通过SQL文件进行大量文件的导入和导出，还可以导入和导出XML、HTML和CSV等多种格式的数据。<br>下载地址：<a target="_blank" rel="noopener" href="http://www.webyog.com/%EF%BC%8C%E8%AF%BB%E8%80%85%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%90%9C%E7%B4%A2%E4%B8%AD%E6%96%87%E7%89%88%E7%9A%84%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80%E3%80%82">http://www.webyog.com/，读者也可以搜索中文版的下载地址。</a></p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014213018979.png" alt="image-20211014213018979" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014213018979.png" alt="image-20211014213018979" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014213036470.png" alt="image-20211014213036470" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014213036470.png" alt="image-20211014213036470" style="zoom:80%;">
 
 <h3 id="工具4：dbeaver"><a href="#工具4：dbeaver" class="headerlink" title="工具4：dbeaver"></a>工具4：dbeaver</h3><p>DBeaver是一个通用的数据库管理工具和 SQL 客户端，支持所有流行的数据库：MySQL、PostgreSQL、SQLite、Oracle、DB2、SQL Server、 Sybase、MS Access、Teradata、 Firebird、Apache Hive、Phoenix、Presto等。DBeaver比大多数的SQL管理工具要轻量，而且支持中文界面。DBeaver社区版作为一个免费开源的产品，和其他类似的软件相比，在功能和易用性上都毫不逊色。</p>
 <p>唯一需要注意是 DBeaver 是用Java编程语言开发的，所以需要拥有 JDK（Java Development ToolKit）环境。如果电脑上没有JDK，在选择安装DBeaver组件时，勾选“Include Java”即可。</p>
 <p>下载地址：<a target="_blank" rel="noopener" href="https://dbeaver.io/download/">https://dbeaver.io/download/</a></p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195237457.png" alt="image-20211014195237457" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195237457.png" alt="image-20211014195237457" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195251371.png" alt="image-20211014195251371" style="zoom:75%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195251371.png" alt="image-20211014195251371" style="zoom:75%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195300510.png" alt="image-20211014195300510" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195300510.png" alt="image-20211014195300510" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014195309805.png" alt="image-20211014195309805" style="zoom:70%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014195309805.png" alt="image-20211014195309805" style="zoom:70%;">
 
 <h3 id="可能出现连接问题："><a href="#可能出现连接问题：" class="headerlink" title="可能出现连接问题："></a>可能出现连接问题：</h3><p>有些图形界面工具，特别是旧版本的图形界面工具，在连接MySQL8时出现“Authentication plugin ‘caching_sha2_password’ cannot be loaded”错误。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211019215249254.png" alt="image-20211019215249254" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211019215249254.png" alt="image-20211019215249254" style="zoom:80%;">
 
 <p>出现这个原因是MySQL8之前的版本中加密规则是mysql_native_password，而在MySQL8之后，加密规则是caching_sha2_password。解决问题方法有两种，第一种是升级图形界面工具版本，第二种是把MySQL8用户登录密码加密规则还原成mysql_native_password。</p>
 <p>第二种解决方案如下，用命令行登录MySQL数据库之后，执行如下命令修改用户密码加密规则并更新用户密码，这里修改用户名为“root@localhost”的用户密码规则为“mysql_native_password”，密码值为“123456”，如图所示。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#使用mysql数据库</span><br><span class="line">USE mysql; </span><br><span class="line"></span><br><span class="line">#修改&#x27;root&#x27;@&#x27;localhost&#x27;用户的密码规则和密码</span><br><span class="line">ALTER USER &#x27;root&#x27;@&#x27;localhost&#x27; IDENTIFIED WITH mysql_native_password BY &#x27;abc123&#x27;; </span><br><span class="line"></span><br><span class="line">#刷新权限</span><br><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211019215408965.png" alt="image-20211019215408965" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211019215408965.png" alt="image-20211019215408965" style="zoom:80%;">
 
 
 
@@ -900,7 +900,7 @@
 <p>接下来，把下载下来的压缩文件解压，我们就得到了 MySQL 的源代码。</p>
 <p>MySQL 是用 C++ 开发而成的，我简单介绍一下源代码的组成。 </p>
 <p>mysql-8.0.22 目录下的各个子目录，包含了 MySQL 各部分组件的源代码： </p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211007154113052.png" alt="image-20211007154113052"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211007154113052.png" alt="image-20211007154113052"></p>
 <ul>
 <li><p>sql 子目录是 MySQL 核心代码；</p>
 </li>
@@ -912,12 +912,12 @@
 </li>
 </ul>
 <p>源代码可以用记事本打开查看，如果你有 C++ 的开发环境，也可以在开发环境中打开查看。 </p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211007154213156.png" alt="image-20211007154213156"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211007154213156.png" alt="image-20211007154213156"></p>
 <p>如上图所示，源代码并不神秘，就是普通的 C++ 代码，跟你熟悉的一样，而且有很多注释，可以帮助你理解。阅读源代码就像在跟 MySQL 的开发人员对话一样，十分有趣。</p>
 <h2 id="7-常见问题的解决-课外内容"><a href="#7-常见问题的解决-课外内容" class="headerlink" title="7. 常见问题的解决(课外内容)"></a>7. 常见问题的解决(课外内容)</h2><h3 id="问题1：root用户密码忘记，重置的操作"><a href="#问题1：root用户密码忘记，重置的操作" class="headerlink" title="问题1：root用户密码忘记，重置的操作"></a>问题1：root用户密码忘记，重置的操作</h3><p>1: 通过任务管理器或者服务管理，关掉mysqld(服务进程)<br>2: 通过命令行+特殊参数开启mysqld<br>mysqld –defaults-file&#x3D;”D:\ProgramFiles\mysql\MySQLServer5.7Data\my.ini” –skip-grant-tables</p>
 <p>3: 此时，mysqld服务进程已经打开。并且不需要权限检查<br>4: mysql -uroot 无密码登陆服务器。另启动一个客户端进行<br>5: 修改权限表<br>（1） use mysql;<br>（2）update user set authentication_string&#x3D;password(‘新密码’) where user&#x3D;’root’ and Host&#x3D;’localhost’;<br>（3）flush privileges;<br>6: 通过任务管理器，关掉mysqld服务进程。<br>7: 再次通过服务管理，打开mysql服务。<br>8: 即可用修改后的新密码登陆。</p>
 <h3 id="问题2：mysql命令报“不是内部或外部命令”"><a href="#问题2：mysql命令报“不是内部或外部命令”" class="headerlink" title="问题2：mysql命令报“不是内部或外部命令”"></a>问题2：mysql命令报“不是内部或外部命令”</h3><p>如果输入mysql命令报“不是内部或外部命令”，把mysql安装目录的bin目录配置到环境变量path中。如下：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914093150145.png" alt="image-20210914093150145"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914093150145.png" alt="image-20210914093150145"></p>
 <h3 id="问题3：错误ERROR-：没有选择数据库就操作表格和数据"><a href="#问题3：错误ERROR-：没有选择数据库就操作表格和数据" class="headerlink" title="问题3：错误ERROR ：没有选择数据库就操作表格和数据"></a>问题3：错误ERROR ：没有选择数据库就操作表格和数据</h3><table>
 <thead>
 <tr>
@@ -934,11 +934,11 @@
 <h3 id="问题4：命令行客户端的字符集问题"><a href="#问题4：命令行客户端的字符集问题" class="headerlink" title="问题4：命令行客户端的字符集问题"></a>问题4：命令行客户端的字符集问题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; INSERT INTO t_stu VALUES(1,&#x27;张三&#x27;,&#x27;男&#x27;);</span><br><span class="line">ERROR 1366 (HY000): Incorrect string value: &#x27;\xD5\xC5\xC8\xFD&#x27; for column &#x27;sname&#x27; at row 1</span><br></pre></td></tr></table></figure>
 
 <p>原因：服务器端认为你的客户端的字符集是utf-8，而实际上你的客户端的字符集是GBK。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554912924219.png" alt="1554912924219"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554912924219.png" alt="1554912924219"></p>
 <p>查看所有字符集：<strong>SHOW VARIABLES LIKE ‘character_set_%’;</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554912943186.png" alt="1554912943186"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554912943186.png" alt="1554912943186"></p>
 <p>解决方案，设置当前连接的客户端字符集 <strong>“SET NAMES GBK;”</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554912957353.png" alt="1554912957353"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554912957353.png" alt="1554912957353"></p>
 <h3 id="问题5：修改数据库和表的字符编码"><a href="#问题5：修改数据库和表的字符编码" class="headerlink" title="问题5：修改数据库和表的字符编码"></a>问题5：修改数据库和表的字符编码</h3><p>修改编码：</p>
 <p>（1)先停止服务，（2）修改my.ini文件（3）重新启动服务</p>
 <p>说明：</p>
@@ -974,10 +974,10 @@
 <li><p>不同的数据库生产厂商都支持SQL语句，但都有特有内容。</p>
 </li>
 </ul>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/SQLisputonghua.jpg" alt="SQLisputonghua" style="zoom:67%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/SQLisputonghua.jpg" alt="SQLisputonghua" style="zoom:67%;">
 
 <h3 id="1-2-SQL语言排行榜"><a href="#1-2-SQL语言排行榜" class="headerlink" title="1.2 SQL语言排行榜"></a>1.2 SQL语言排行榜</h3><p>自从 SQL 加入了 TIOBE 编程语言排行榜，就一直保持在 Top 10。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211014230114639.png" alt="image-20211014230114639" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211014230114639.png" alt="image-20211014230114639" style="zoom:80%;">
 
 <h3 id="1-3-SQL-分类"><a href="#1-3-SQL-分类" class="headerlink" title="1.3 SQL 分类"></a>1.3 SQL 分类</h3><p>SQL语言在功能上主要分为如下3大类：</p>
 <ul>
@@ -1060,7 +1060,7 @@
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span>   departments;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554950890895.png" alt="1554950890895"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554950890895.png" alt="1554950890895"></p>
 <blockquote>
 <p>一般情况下，除非需要使用表中所有的字段数据，最好不要使用通配符‘*’。使用通配符虽然可以节省输入查询语句的时间，但是获取不需要的列数据通常会降低查询和所使用的应用程序的效率。通配符的优势是，当不知道所需要的列的名称时，可以通过它获取它们。</p>
 <p>在生产环境下，不推荐你直接使用<code>SELECT *</code>进行查询。</p>
@@ -1070,7 +1070,7 @@
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> department_id, location_id</span><br><span class="line"><span class="keyword">FROM</span>   departments;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554950947969.png" alt="1554950947969"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554950947969.png" alt="1554950947969"></p>
 <blockquote>
 <p>MySQL中的SQL语句是不区分大小写的，因此SELECT和select的作用是相同的，但是，许多开发人员习惯将关键字大写、数据列和表名小写，读者也应该养成一个良好的编程习惯，这样写出来的代码更容易阅读和维护。</p>
 </blockquote>
@@ -1088,22 +1088,22 @@
 <li><p>举例</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT last_name AS name, commission_pct comm</span><br><span class="line">FROM   employees;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951616598.png" alt="1554951616598"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951622467.png" alt="1554951622467"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951616598.png" alt="1554951616598"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951622467.png" alt="1554951622467"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT last_name &quot;Name&quot;, salary*12 &quot;Annual Salary&quot;</span><br><span class="line">FROM   employees;</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951648377.png" alt="1554951648377"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951655368.png" alt="1554951655368"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951648377.png" alt="1554951648377"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951655368.png" alt="1554951655368"></p>
 <h3 id="3-3-去除重复行"><a href="#3-3-去除重复行" class="headerlink" title="3.3 去除重复行"></a>3.3 去除重复行</h3><p>默认情况下，查询会返回全部行，包括重复行。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> department_id</span><br><span class="line"><span class="keyword">FROM</span>   employees;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951711115.png" alt="1554951711115"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951715923.png" alt="1554951715923"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951711115.png" alt="1554951711115"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951715923.png" alt="1554951715923"></p>
 <p><strong>在SELECT语句中使用关键字DISTINCT去除重复行</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> department_id</span><br><span class="line"><span class="keyword">FROM</span>   employees;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951796570.png" alt="1554951796570"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554951801044.png" alt="1554951801044"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951796570.png" alt="1554951796570"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554951801044.png" alt="1554951801044"></p>
 <p>针对于：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT DISTINCT department_id,salary </span><br><span class="line">FROM employees;</span><br></pre></td></tr></table></figure>
 
@@ -1157,7 +1157,7 @@
 <h2 id="5-过滤数据"><a href="#5-过滤数据" class="headerlink" title="5. 过滤数据"></a>5. 过滤数据</h2><ul>
 <li>背景：</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554952199742.png" alt="1554952199742"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554952199742.png" alt="1554952199742"></p>
 <ul>
 <li><p>语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT 字段1,字段2</span><br><span class="line">FROM 表名</span><br><span class="line">WHERE 过滤条件</span><br></pre></td></tr></table></figure>
@@ -1172,12 +1172,12 @@
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> employee_id, last_name, job_id, department_id</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  department_id <span class="operator">=</span> <span class="number">90</span> ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554952277028.png" alt="1554952277028"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554952277028.png" alt="1554952277028"></p>
 <h1 id="第04章-运算符"><a href="#第04章-运算符" class="headerlink" title="第04章_运算符"></a>第04章_运算符</h1><p>讲师：尚硅谷-宋红康（江湖人称：康师傅）</p>
 <p>官网：<a target="_blank" rel="noopener" href="http://www.atguigu.com/">http://www.atguigu.com</a></p>
 <hr>
 <h2 id="1-算术运算符"><a href="#1-算术运算符" class="headerlink" title="1. 算术运算符"></a>1. 算术运算符</h2><p>算术运算符主要用于数学运算，其可以连接运算符前后的两个数值或表达式，对数值或表达式进行加（+）、减（-）、乘（*）、除（&#x2F;）和取模（%）运算。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012100749193.png" alt="image-20211012100749193"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012100749193.png" alt="image-20211012100749193"></p>
 <p><strong>1．加法与减法运算符</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 100, 100 + 0, 100 - 0, 100 + 50, 100 + 50 -30, 100 + 35.5, 100 - 35.5 FROM dual;</span><br><span class="line">+-----+---------+---------+----------+--------------+------------+------------+</span><br><span class="line">| 100 | 100 + 0 | 100 - 0 | 100 + 50 | 100 + 50 -30 | 100 + 35.5 | 100 - 35.5 |</span><br><span class="line">+-----+---------+---------+----------+--------------+------------+------------+</span><br><span class="line">| 100 |     100 |     100 |      150 |          120 |      135.5 |       64.5 |</span><br><span class="line">+-----+---------+---------+----------+--------------+------------+------------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
@@ -1214,9 +1214,9 @@
 <p>可以看到，100对3求模后的结果为3，对5求模后的结果为0。</p>
 <h2 id="2-比较运算符"><a href="#2-比较运算符" class="headerlink" title="2. 比较运算符"></a>2. 比较运算符</h2><p>比较运算符用来对表达式左边的操作数和右边的操作数进行比较，比较的结果为真则返回1，比较的结果为假则返回0，其他情况则返回NULL。</p>
 <p>比较运算符经常被用来作为SELECT查询语句的条件来使用，返回符合条件的结果记录。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211012101110021.png" alt="image-20211012101110021">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012101110021.png" alt="image-20211012101110021">
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012104955094.png" alt="image-20211012104955094"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012104955094.png" alt="image-20211012104955094"></p>
 <p><strong>1．等号运算符</strong></p>
 <ul>
 <li><p>等号运算符（&#x3D;）判断等号两边的值、字符串或表达式是否相等，如果相等则返回1，不相等则返回0。</p>
@@ -1248,9 +1248,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 1 &lt;&gt; 1, 1 != 2, &#x27;a&#x27; != &#x27;b&#x27;, (3+4) &lt;&gt; (2+6), &#x27;a&#x27; != NULL, NULL &lt;&gt; NULL; </span><br><span class="line">+--------+--------+------------+----------------+-------------+--------------+</span><br><span class="line">| 1 &lt;&gt; 1 | 1 != 2 | &#x27;a&#x27; != &#x27;b&#x27; | (3+4) &lt;&gt; (2+6) | &#x27;a&#x27; != NULL | NULL &lt;&gt; NULL |</span><br><span class="line">+--------+--------+------------+----------------+-------------+--------------+</span><br><span class="line">|      0 |   1    |       1    |            1   |     NULL    |         NULL |</span><br><span class="line">+--------+--------+------------+----------------+-------------+--------------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
 <p>此外，还有非符号类型的运算符：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012105303219.png" alt="image-20211012105303219"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012105030527.png" alt="image-20211012105030527"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012105052456.png" alt="image-20211012105052456"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012105303219.png" alt="image-20211012105303219"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012105030527.png" alt="image-20211012105030527"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012105052456.png" alt="image-20211012105052456"></p>
 <p><strong>4. 空运算符</strong><br>空运算符（IS NULL或者ISNULL）判断一个值是否为NULL，如果为NULL则返回1，否则返回0。<br>SQL语句示例如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT NULL IS NULL, ISNULL(NULL), ISNULL(&#x27;a&#x27;), 1 IS NULL;</span><br><span class="line">+--------------+--------------+-------------+-----------+</span><br><span class="line">| NULL IS NULL | ISNULL(NULL) | ISNULL(&#x27;a&#x27;) | 1 IS NULL |</span><br><span class="line">+--------------+--------------+-------------+-----------+</span><br><span class="line">|            1 |            1 |           0 |         0 |</span><br><span class="line">+--------------+--------------+-------------+-----------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
@@ -1318,7 +1318,7 @@
 
 <h2 id="3-逻辑运算符"><a href="#3-逻辑运算符" class="headerlink" title="3. 逻辑运算符"></a>3. 逻辑运算符</h2><p>逻辑运算符主要用来判断表达式的真假，在MySQL中，逻辑运算符的返回结果为1、0或者NULL。</p>
 <p>MySQL中支持4种逻辑运算符如下：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012110241418.png" alt="image-20211012110241418"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012110241418.png" alt="image-20211012110241418"></p>
 <p><strong>1．逻辑非运算符</strong><br>逻辑非（NOT或!）运算符表示当给定的值为0时返回1；当给定的值为非0值时返回0；当给定的值为NULL时，返回NULL。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT NOT 1, NOT 0, NOT(1+1), NOT !1, NOT NULL;    </span><br><span class="line">+-------+-------+----------+--------+----------+</span><br><span class="line">| NOT 1 | NOT 0 | NOT(1+1) | NOT !1 | NOT NULL |</span><br><span class="line">+-------+-------+----------+--------+----------+</span><br><span class="line">|     0 |     1 |        0 |      1 |     NULL |</span><br><span class="line">+-------+-------+----------+--------+----------+</span><br><span class="line">1 row in set, 1 warning (0.00 sec)</span><br></pre></td></tr></table></figure>
 
@@ -1347,7 +1347,7 @@
 
 <h2 id="4-位运算符"><a href="#4-位运算符" class="headerlink" title="4. 位运算符"></a>4. 位运算符</h2><p>位运算符是在二进制数上进行计算的运算符。位运算符会先将操作数变成二进制数，然后进行位运算，最后将计算结果从二进制变回十进制数。</p>
 <p>MySQL支持的位运算符如下：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012110511223.png" alt="image-20211012110511223"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012110511223.png" alt="image-20211012110511223"></p>
 <p><strong>1．按位与运算符</strong><br>按位与（&amp;）运算符将给定值对应的二进制数逐位进行逻辑与运算。当给定值对应的二进制位的数值都为1时，则该位返回1，否则返回0。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 1 &amp; 10, 20 &amp; 30;</span><br><span class="line">+--------+---------+</span><br><span class="line">| 1 &amp; 10 | 20 &amp; 30 |</span><br><span class="line">+--------+---------+</span><br><span class="line">|      0 |      20 |</span><br><span class="line">+--------+---------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
@@ -1363,7 +1363,7 @@
 <p>再举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 12 &amp; 5, 12 | 5,12 ^ 5 FROM DUAL;</span><br><span class="line">+--------+--------+--------+</span><br><span class="line">| 12 &amp; 5 | 12 | 5 | 12 ^ 5 |</span><br><span class="line">+--------+--------+--------+</span><br><span class="line">|      4 |     13 |      9 |</span><br><span class="line">+--------+--------+--------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211023115738415.png" alt="image-20211023115738415" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211023115738415.png" alt="image-20211023115738415" style="zoom:80%;">
 
 <p><strong>4. 按位取反运算符</strong><br>按位取反（~）运算符将给定的值的二进制数逐位进行取反操作，即将1变为0，将0变为1。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 10 &amp; ~1;</span><br><span class="line">+---------+</span><br><span class="line">| 10 &amp; ~1 |</span><br><span class="line">+---------+</span><br><span class="line">|      10 |</span><br><span class="line">+---------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
@@ -1377,12 +1377,12 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT 1 &lt;&lt; 2, 4 &lt;&lt; 2;  </span><br><span class="line">+--------+--------+</span><br><span class="line">| 1 &lt;&lt; 2 | 4 &lt;&lt; 2 |</span><br><span class="line">+--------+--------+</span><br><span class="line">|      4 |     16 |</span><br><span class="line">+--------+--------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
 <p>1的二进制数为0000 0001，左移两位为0000 0100，对应的十进制数为4。4的二进制数为0000 0100，左移两位为0001 0000，对应的十进制数为16。</p>
-<h2 id="5-运算符的优先级"><a href="#5-运算符的优先级" class="headerlink" title="5. 运算符的优先级"></a>5. 运算符的优先级</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012111042395.png" alt="image-20211012111042395"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012110731059.png" alt="image-20211012110731059"></p>
+<h2 id="5-运算符的优先级"><a href="#5-运算符的优先级" class="headerlink" title="5. 运算符的优先级"></a>5. 运算符的优先级</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012111042395.png" alt="image-20211012111042395"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012110731059.png" alt="image-20211012110731059"></p>
 <p>数字编号越大，优先级越高，优先级高的运算符先进行计算。可以看到，赋值运算符的优先级最低，使用“()”括起来的表达式的优先级最高。</p>
 <h2 id="拓展：使用正则表达式查询"><a href="#拓展：使用正则表达式查询" class="headerlink" title="拓展：使用正则表达式查询"></a>拓展：使用正则表达式查询</h2><p>正则表达式通常被用来检索或替换那些符合某个模式的文本内容，根据指定的匹配模式匹配文本中符合要求的特殊字符串。例如，从一个文本文件中提取电话号码，查找一篇文章中重复的单词或者替换用户输入的某些敏感词语等，这些地方都可以使用正则表达式。正则表达式强大而且灵活，可以应用于非常复杂的查询。</p>
 <p>MySQL中使用REGEXP关键字指定正则表达式的字符匹配模式。下表列出了REGEXP操作符中常用字符匹配列表。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210926151249943.png" alt="image-20210926151249943"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210926151249943.png" alt="image-20210926151249943"></p>
 <p><strong>1. 查询以特定字符或字符串开头的记录</strong><br>字符‘^’匹配以特定字符或者字符串开头的文本。</p>
 <p>在fruits表中，查询f_name字段以字母‘b’开头的记录，SQL语句如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT * FROM fruits WHERE f_name REGEXP &#x27;^b&#x27;;</span><br></pre></td></tr></table></figure>
@@ -1430,20 +1430,20 @@
 <p>在fruits表中，查询f_name字段值出现字符串“ba”最少1次、最多3次的记录，SQL语句如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT * FROM fruits WHERE f_name REGEXP &#x27;ba&#123;1,3&#125;&#x27;;</span><br><span class="line">```# 第05章_排序与分页</span><br><span class="line"></span><br><span class="line">讲师：尚硅谷-宋红康（江湖人称：康师傅）</span><br><span class="line"></span><br><span class="line">官网：[http://www.atguigu.com](http://www.atguigu.com/)</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">## 1. 排序数据</span><br><span class="line"></span><br><span class="line">### 1.1 排序规则</span><br><span class="line"></span><br><span class="line">- 使用 ORDER BY 子句排序</span><br><span class="line">  - **ASC（ascend）: 升序**</span><br><span class="line">  - **DESC（descend）:降序**</span><br><span class="line">- **ORDER BY 子句在SELECT语句的结尾。**</span><br><span class="line"></span><br><span class="line">### 1.2 单列排序</span><br><span class="line"></span><br><span class="line">```mysql</span><br><span class="line">SELECT   last_name, job_id, department_id, hire_date</span><br><span class="line">FROM     employees</span><br><span class="line">ORDER BY hire_date ;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974255957.png" alt="1554974255957"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974260133.png" alt="1554974260133"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974255957.png" alt="1554974255957"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974260133.png" alt="1554974260133"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT   last_name, job_id, department_id, hire_date</span><br><span class="line">FROM     employees</span><br><span class="line">ORDER BY hire_date DESC ;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974822229.png" alt="1554974822229"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974827522.png" alt="1554974827522"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974822229.png" alt="1554974822229"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974827522.png" alt="1554974827522"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT employee_id, last_name, salary*12 annsal</span><br><span class="line">FROM   employees</span><br><span class="line">ORDER BY annsal;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974853194.png" alt="1554974853194"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974858252.png" alt="1554974858252"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974853194.png" alt="1554974853194"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974858252.png" alt="1554974858252"></p>
 <h3 id="1-3-多列排序"><a href="#1-3-多列排序" class="headerlink" title="1.3 多列排序"></a>1.3 多列排序</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT last_name, department_id, salary</span><br><span class="line">FROM   employees</span><br><span class="line">ORDER BY department_id, salary DESC;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974901572.png" alt="1554974901572"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974907498.png" alt="1554974907498"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974901572.png" alt="1554974901572"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974907498.png" alt="1554974907498"></p>
 <ul>
 <li>可以使用不在SELECT列表中的列排序。</li>
 <li>在对多列进行排序的时候，首先排序的第一列必须有相同的列值，才会对第二列进行排序。如果第一列数据中所有值都是唯一的，将不再对第二列进行排序。</li>
@@ -1504,12 +1504,12 @@
 <hr>
 <p>多表查询，也称为关联查询，指两个或更多个表一起完成查询操作。</p>
 <p>前提条件：这些一起查询的表之间是有关系的（一对一、一对多），它们之间一定是有关联字段，这个关联字段可能建立了外键，也可能没有建立外键。比如：员工表和部门表，这两个表依靠“部门编号”进行关联。</p>
-<h2 id="1-一个案例引发的多表连接"><a href="#1-一个案例引发的多表连接" class="headerlink" title="1. 一个案例引发的多表连接"></a>1. 一个案例引发的多表连接</h2><h3 id="1-1-案例说明"><a href="#1-1-案例说明" class="headerlink" title="1.1 案例说明"></a>1.1 案例说明</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554974984600.png" alt="1554974984600"></p>
+<h2 id="1-一个案例引发的多表连接"><a href="#1-一个案例引发的多表连接" class="headerlink" title="1. 一个案例引发的多表连接"></a>1. 一个案例引发的多表连接</h2><h3 id="1-1-案例说明"><a href="#1-1-案例说明" class="headerlink" title="1.1 案例说明"></a>1.1 案例说明</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554974984600.png" alt="1554974984600"></p>
 <p>从多个表中获取数据：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554975020388.png" alt="1554975020388"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554975020388.png" alt="1554975020388"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#案例：查询员工的姓名及其部门名称</span><br><span class="line">SELECT last_name, department_name</span><br><span class="line">FROM employees, departments;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554975097631.png" alt="1554975097631"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554975097631.png" alt="1554975097631"></p>
 <p>查询结果：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">+-----------+----------------------+</span><br><span class="line">| last_name | department_name      |</span><br><span class="line">+-----------+----------------------+</span><br><span class="line">| King      | Administration       |</span><br><span class="line">| King      | Marketing            |</span><br><span class="line">| King      | Purchasing           |</span><br><span class="line">| King      | Human Resources      |</span><br><span class="line">| King      | Shipping             |</span><br><span class="line">| King      | IT                   |</span><br><span class="line">| King      | Public Relations     |</span><br><span class="line">| King      | Sales                |</span><br><span class="line">| King      | Executive            |</span><br><span class="line">| King      | Finance              |</span><br><span class="line">| King      | Accounting           |</span><br><span class="line">| King      | Treasury             |</span><br><span class="line">...</span><br><span class="line">| Gietz     | IT Support           |</span><br><span class="line">| Gietz     | NOC                  |</span><br><span class="line">| Gietz     | IT Helpdesk          |</span><br><span class="line">| Gietz     | Government Sales     |</span><br><span class="line">| Gietz     | Retail Sales         |</span><br><span class="line">| Gietz     | Recruiting           |</span><br><span class="line">| Gietz     | Payroll              |</span><br><span class="line">+-----------+----------------------+</span><br><span class="line">2889 rows in set (0.01 sec)</span><br></pre></td></tr></table></figure>
 
@@ -1546,13 +1546,13 @@
 <li><p><strong>在表中有相同列时，在列名之前加上表名前缀。</strong></p>
 </li>
 </ul>
-<h2 id="2-多表查询分类讲解"><a href="#2-多表查询分类讲解" class="headerlink" title="2. 多表查询分类讲解"></a>2. 多表查询分类讲解</h2><h3 id="分类1：等值连接-vs-非等值连接"><a href="#分类1：等值连接-vs-非等值连接" class="headerlink" title="分类1：等值连接 vs 非等值连接"></a>分类1：等值连接 vs 非等值连接</h3><h4 id="等值连接"><a href="#等值连接" class="headerlink" title="等值连接"></a>等值连接</h4><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554975496900.png" alt="1554975496900"></p>
+<h2 id="2-多表查询分类讲解"><a href="#2-多表查询分类讲解" class="headerlink" title="2. 多表查询分类讲解"></a>2. 多表查询分类讲解</h2><h3 id="分类1：等值连接-vs-非等值连接"><a href="#分类1：等值连接-vs-非等值连接" class="headerlink" title="分类1：等值连接 vs 非等值连接"></a>分类1：等值连接 vs 非等值连接</h3><h4 id="等值连接"><a href="#等值连接" class="headerlink" title="等值连接"></a>等值连接</h4><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554975496900.png" alt="1554975496900"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT employees.employee_id, employees.last_name, </span><br><span class="line">       employees.department_id, departments.department_id,</span><br><span class="line">       departments.location_id</span><br><span class="line">FROM   employees, departments</span><br><span class="line">WHERE  employees.department_id = departments.department_id;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554975522600.png" alt="1554975522600"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554975526339.png" alt="1554975526339"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554975522600.png" alt="1554975522600"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554975526339.png" alt="1554975526339"></p>
 <p><strong>拓展1：多个连接条件与 AND 操作符</strong> </p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554975606231.png" alt="1554975606231"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554975606231.png" alt="1554975606231"></p>
 <p><strong>拓展2：区分重复的列名</strong></p>
 <ul>
 <li><strong>多个表中有相同列时，必须在列名之前加上表名前缀。</strong></li>
@@ -1580,26 +1580,26 @@
 <p><code>反例</code>：在某业务中，由于多表关联查询语句没有加表的别名（或表名）的限制，正常运行两年后，最近在 某个表中增加一个同名字段，在预发布环境做数据库变更后，线上查询语句出现出 1052 异常：Column  ‘name’ in field list is ambiguous。</p>
 </blockquote>
 <p><strong>拓展4：连接多个表</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978354431.png" alt="1554978354431"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978354431.png" alt="1554978354431"></p>
 <p><strong>总结：连接 n个表,至少需要n-1个连接条件。</strong>比如，连接三个表，至少需要两个连接条件。</p>
 <p>练习：查询出公司员工的 last_name,department_name, city</p>
-<h4 id="非等值连接"><a href="#非等值连接" class="headerlink" title="非等值连接"></a>非等值连接</h4><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978442447.png" alt="1554978442447"></p>
+<h4 id="非等值连接"><a href="#非等值连接" class="headerlink" title="非等值连接"></a>非等值连接</h4><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978442447.png" alt="1554978442447"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT e.last_name, e.salary, j.grade_level</span><br><span class="line">FROM   employees e, job_grades j</span><br><span class="line">WHERE  e.salary BETWEEN j.lowest_sal AND j.highest_sal;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978477013.png" alt="1554978477013"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978482652.png" alt="1554978482652"></p>
-<h3 id="分类2：自连接-vs-非自连接"><a href="#分类2：自连接-vs-非自连接" class="headerlink" title="分类2：自连接 vs 非自连接"></a>分类2：自连接 vs 非自连接</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978514321.png" alt="1554978514321"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978477013.png" alt="1554978477013"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978482652.png" alt="1554978482652"></p>
+<h3 id="分类2：自连接-vs-非自连接"><a href="#分类2：自连接-vs-非自连接" class="headerlink" title="分类2：自连接 vs 非自连接"></a>分类2：自连接 vs 非自连接</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978514321.png" alt="1554978514321"></p>
 <ul>
 <li>当table1和table2本质上是同一张表，只是用取别名的方式虚拟成两张表以代表不同的意义。然后两个表再进行内连接，外连接等查询。</li>
 </ul>
 <p><strong>题目：查询employees表，返回“Xxx  works for Xxx”</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT CONCAT(worker.last_name ,&#x27; works for &#x27; </span><br><span class="line">       , manager.last_name)</span><br><span class="line">FROM   employees worker, employees manager</span><br><span class="line">WHERE  worker.manager_id = manager.employee_id ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978684947.png" alt="1554978684947"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978690764.png" alt="1554978690764"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978684947.png" alt="1554978684947"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978690764.png" alt="1554978690764"></p>
 <p>练习：查询出last_name为 ‘Chen’ 的员工的 manager 的信息。</p>
 <h3 id="分类3：内连接-vs-外连接"><a href="#分类3：内连接-vs-外连接" class="headerlink" title="分类3：内连接 vs 外连接"></a>分类3：内连接 vs 外连接</h3><p>除了查询满足条件的记录以外，外连接还可以查询某一方不满足条件的记录。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554978955659.png" alt="1554978955659"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554978955659.png" alt="1554978955659"></p>
 <ul>
 <li><p>内连接: 合并具有同一列的两个以上的表的行, <strong>结果集中不包含一个表与另一个表不匹配的行</strong></p>
 </li>
@@ -1644,13 +1644,13 @@
 <p>题目1：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT e.employee_id, e.last_name, e.department_id, </span><br><span class="line">       d.department_id, d.location_id</span><br><span class="line">FROM   employees e JOIN departments d</span><br><span class="line">ON     (e.department_id = d.department_id);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979073996.png" alt="1554979073996"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979079395.png" alt="1554979079395"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979073996.png" alt="1554979073996"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979079395.png" alt="1554979079395"></p>
 <p>题目2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SELECT employee_id, city, department_name</span><br><span class="line">FROM   employees e </span><br><span class="line">JOIN   departments d</span><br><span class="line">ON     d.department_id = e.department_id </span><br><span class="line">JOIN   locations l</span><br><span class="line">ON     d.location_id = l.location_id;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979110008.png" alt="1554979110008"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979115642.png" alt="1554979115642"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979110008.png" alt="1554979110008"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979115642.png" alt="1554979115642"></p>
 <h3 id="3-3-外连接-OUTER-JOIN-的实现"><a href="#3-3-外连接-OUTER-JOIN-的实现" class="headerlink" title="3.3 外连接(OUTER JOIN)的实现"></a>3.3 外连接(OUTER JOIN)的实现</h3><h4 id="3-3-1-左外连接-LEFT-OUTER-JOIN"><a href="#3-3-1-左外连接-LEFT-OUTER-JOIN" class="headerlink" title="3.3.1 左外连接(LEFT OUTER JOIN)"></a>3.3.1 左外连接(LEFT OUTER JOIN)</h4><ul>
 <li>语法：</li>
 </ul>
@@ -1661,7 +1661,7 @@
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT e.last_name, e.department_id, d.department_name</span><br><span class="line">FROM   employees e</span><br><span class="line">LEFT OUTER JOIN departments d</span><br><span class="line">ON   (e.department_id = d.department_id) ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979200961.png" alt="1554979200961"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979200961.png" alt="1554979200961"></p>
 <h4 id="3-3-2-右外连接-RIGHT-OUTER-JOIN"><a href="#3-3-2-右外连接-RIGHT-OUTER-JOIN" class="headerlink" title="3.3.2 右外连接(RIGHT OUTER JOIN)"></a>3.3.2 右外连接(RIGHT OUTER JOIN)</h4><ul>
 <li>语法：</li>
 </ul>
@@ -1672,7 +1672,7 @@
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT e.last_name, e.department_id, d.department_name</span><br><span class="line">FROM   employees e</span><br><span class="line">RIGHT OUTER JOIN departments d</span><br><span class="line">ON    (e.department_id = d.department_id) ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979243194.png" alt="1554979243194"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979243194.png" alt="1554979243194"></p>
 <blockquote>
 <p>需要注意的是，LEFT JOIN 和 RIGHT JOIN 只存在于 SQL99 及以后的标准中，在 SQL92 中不存在，只能用 (+) 表示。</p>
 </blockquote>
@@ -1686,11 +1686,11 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT column,... FROM table1</span><br><span class="line">UNION [ALL]</span><br><span class="line">SELECT column,... FROM table2</span><br></pre></td></tr></table></figure>
 
 <p><strong>UNION操作符</strong></p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1554979317187.png" alt="1554979317187" style="zoom: 67%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979317187.png" alt="1554979317187" style="zoom: 67%;">
 
 <p>UNION 操作符返回两个查询的结果集的并集，去除重复记录。</p>
 <p><strong>UNION ALL操作符</strong></p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1554979343634.png" alt="1554979343634" style="zoom: 67%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979343634.png" alt="1554979343634" style="zoom: 67%;">
 
 <p>UNION ALL操作符返回两个查询的结果集的并集。对于两个结果集的重复部分，不去重。</p>
 <blockquote>
@@ -1704,7 +1704,7 @@
 <p>举例：查询中国用户中男性的信息以及美国用户中年男性的用户信息</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT id,cname FROM t_chinamale WHERE csex=&#x27;男&#x27;</span><br><span class="line">UNION ALL</span><br><span class="line">SELECT id,tname FROM t_usmale WHERE tGender=&#x27;male&#x27;;</span><br></pre></td></tr></table></figure>
 
-<h2 id="5-7种SQL-JOINS的实现"><a href="#5-7种SQL-JOINS的实现" class="headerlink" title="5. 7种SQL JOINS的实现"></a>5. 7种SQL JOINS的实现</h2><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1554979255233.png" alt="1554979255233" style="zoom:80%;">
+<h2 id="5-7种SQL-JOINS的实现"><a href="#5-7种SQL-JOINS的实现" class="headerlink" title="5. 7种SQL JOINS的实现"></a>5. 7种SQL JOINS的实现</h2><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979255233.png" alt="1554979255233" style="zoom:80%;">
 
 <h3 id="5-7-1-代码实现"><a href="#5-7-1-代码实现" class="headerlink" title="5.7.1 代码实现"></a>5.7.1 代码实现</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#中图：内连接 A∩B</span><br><span class="line">SELECT employee_id,last_name,department_name</span><br><span class="line">FROM employees e JOIN departments d</span><br><span class="line">ON e.`department_id` = d.`department_id`;</span><br></pre></td></tr></table></figure>
 
@@ -1781,13 +1781,13 @@
 <p>官网：<a target="_blank" rel="noopener" href="http://www.atguigu.com/">http://www.atguigu.com</a></p>
 <hr>
 <h2 id="1-函数的理解"><a href="#1-函数的理解" class="headerlink" title="1. 函数的理解"></a>1. 函数的理解</h2><h3 id="1-1-什么是函数"><a href="#1-1-什么是函数" class="headerlink" title="1.1 什么是函数"></a>1.1 什么是函数</h3><p>函数在计算机语言的使用中贯穿始终，函数的作用是什么呢？它可以把我们经常使用的代码封装起来，需要的时候直接调用即可。这样既<code>提高了代码效率</code>，又<code>提高了可维护性</code>。在 SQL 中我们也可以使用函数对检索出来的数据进行函数操作。使用这些函数，可以极大地<code>提高用户对数据库的管理效率</code>。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554979529525.png" alt="1554979529525"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554979529525.png" alt="1554979529525"></p>
 <p>从函数定义的角度出发，我们可以将函数分成<code>内置函数</code>和<code>自定义函数</code>。在 SQL 语言中，同样也包括了内置函数和自定义函数。内置函数是系统内置的通用函数，而自定义函数是我们根据自己的需要编写的，本章及下一章讲解的是 SQL 的内置函数。</p>
 <h3 id="1-2-不同DBMS函数的差异"><a href="#1-2-不同DBMS函数的差异" class="headerlink" title="1.2 不同DBMS函数的差异"></a>1.2 不同DBMS函数的差异</h3><p>我们在使用 SQL 语言的时候，不是直接和这门语言打交道，而是通过它使用不同的数据库软件，即 DBMS。<strong>DBMS 之间的差异性很大，远大于同一个语言不同版本之间的差异。</strong>实际上，只有很少的函数是被 DBMS 同时支持的。比如，大多数 DBMS 使用（||）或者（+）来做拼接符，而在 MySQL 中的字符串拼接函数为concat()。大部分 DBMS 会有自己特定的函数，这就意味着<strong>采用 SQL 函数的代码可移植性是很差的</strong>，因此在使用函数的时候需要特别注意。</p>
 <h3 id="1-3-MySQL的内置函数及分类"><a href="#1-3-MySQL的内置函数及分类" class="headerlink" title="1.3 MySQL的内置函数及分类"></a>1.3 MySQL的内置函数及分类</h3><p>MySQL提供了丰富的内置函数，这些函数使得数据的维护与管理更加方便，能够更好地提供数据的分析与统计功能，在一定程度上提高了开发人员进行数据分析与统计的效率。</p>
 <p>MySQL提供的内置函数从<code>实现的功能角度</code>可以分为数值函数、字符串函数、日期和时间函数、流程控制函数、加密与解密函数、获取MySQL信息函数、聚合函数等。这里，我将这些丰富的内置函数再分为两类：<code>单行函数</code>、<code>聚合函数（或分组函数）</code>。</p>
 <p><strong>两种SQL函数</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555433204337.png" alt="1555433204337"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555433204337.png" alt="1555433204337"></p>
 <p><strong>单行函数</strong></p>
 <ul>
 <li>操作数据对象</li>
@@ -1864,13 +1864,13 @@
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT ABS(-123),ABS(32),SIGN(-23),SIGN(43),PI(),CEIL(32.32),CEILING(-43.23),FLOOR(32.32),</span><br><span class="line">FLOOR(-43.23),MOD(12,5)</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025162304844.png" alt="image-20211025162304844"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025162304844.png" alt="image-20211025162304844"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT RAND(),RAND(),RAND(10),RAND(10),RAND(-1),RAND(-1)</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025162538958.png" alt="image-20211025162538958"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025162538958.png" alt="image-20211025162538958"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT ROUND(12.33),ROUND(12.343,2),ROUND(12.324,-1),TRUNCATE(12.66,1),TRUNCATE(12.66,-1)</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025162730421.png" alt="image-20211025162730421"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025162730421.png" alt="image-20211025162730421"></p>
 <h3 id="2-2-角度与弧度互换函数"><a href="#2-2-角度与弧度互换函数" class="headerlink" title="2.2 角度与弧度互换函数"></a>2.2 角度与弧度互换函数</h3><table>
 <thead>
 <tr>
@@ -1936,7 +1936,7 @@
 <p>ATAN2(M,N)函数的使用示例如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT SIN(RADIANS(30)),DEGREES(ASIN(1)),TAN(RADIANS(45)),DEGREES(ATAN(1)),DEGREES(ATAN2(1,1))</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025163846974.png" alt="image-20211025163846974"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025163846974.png" alt="image-20211025163846974"></p>
 <h3 id="2-4-指数与对数"><a href="#2-4-指数与对数" class="headerlink" title="2.4 指数与对数"></a>2.4 指数与对数</h3><table>
 <thead>
 <tr>
@@ -2156,7 +2156,7 @@
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT CURDATE(),CURTIME(),NOW(),SYSDATE()+0,UTC_DATE(),UTC_DATE()+0,UTC_TIME(),UTC_TIME()+0</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025193742633.png" alt="image-20211025193742633"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025193742633.png" alt="image-20211025193742633"></p>
 <h3 id="4-2-日期与时间戳的转换"><a href="#4-2-日期与时间戳的转换" class="headerlink" title="4.2 日期与时间戳的转换"></a>4.2 日期与时间戳的转换</h3><table>
 <thead>
 <tr>
@@ -2233,10 +2233,10 @@
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT YEAR(CURDATE()),MONTH(CURDATE()),DAY(CURDATE()),</span><br><span class="line">HOUR(CURTIME()),MINUTE(NOW()),SECOND(SYSDATE())</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025213504115.png" alt="image-20211025213504115"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025213504115.png" alt="image-20211025213504115"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT MONTHNAME(&#x27;2021-10-26&#x27;),DAYNAME(&#x27;2021-10-26&#x27;),WEEKDAY(&#x27;2021-10-26&#x27;),</span><br><span class="line">QUARTER(CURDATE()),WEEK(CURDATE()),DAYOFYEAR(NOW()),</span><br><span class="line">DAYOFMONTH(NOW()),DAYOFWEEK(NOW())</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211025214818623.png" alt="image-20211025214818623"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211025214818623.png" alt="image-20211025214818623"></p>
 <h3 id="4-4-日期的操作函数"><a href="#4-4-日期的操作函数" class="headerlink" title="4.4 日期的操作函数"></a>4.4 日期的操作函数</h3><table>
 <thead>
 <tr>
@@ -2250,8 +2250,8 @@
 </tr>
 </tbody></table>
 <p>EXTRACT(type FROM date)函数中type的取值与含义：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012142639469.png" alt="image-20211012142639469"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012142746444.png" alt="image-20211012142746444"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012142639469.png" alt="image-20211012142639469"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012142746444.png" alt="image-20211012142746444"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT EXTRACT(MINUTE FROM NOW()),EXTRACT( WEEK FROM NOW()),</span><br><span class="line">EXTRACT( QUARTER FROM NOW()),EXTRACT( MINUTE_SECOND FROM NOW())</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
 <h3 id="4-5-时间和秒钟转换的函数"><a href="#4-5-时间和秒钟转换的函数" class="headerlink" title="4.5 时间和秒钟转换的函数"></a>4.5 时间和秒钟转换的函数</h3><table>
@@ -2293,7 +2293,7 @@
 </tr>
 </tbody></table>
 <p>上述函数中type的取值：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012143203355.png" alt="image-20211012143203355"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012143203355.png" alt="image-20211012143203355"></p>
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SELECT DATE_ADD(NOW(), INTERVAL 1 DAY) AS col1,DATE_ADD(&#x27;2021-10-21 23:32:12&#x27;,INTERVAL 1 SECOND) AS col2,</span><br><span class="line">ADDDATE(&#x27;2021-10-21 23:32:12&#x27;,INTERVAL 1 SECOND) AS col3,</span><br><span class="line">DATE_ADD(&#x27;2021-10-21 23:32:12&#x27;,INTERVAL &#x27;1_1&#x27; MINUTE_SECOND) AS col4,</span><br><span class="line">DATE_ADD(NOW(), INTERVAL -1 YEAR) AS col5, #可以是负数</span><br><span class="line">DATE_ADD(NOW(), INTERVAL &#x27;1_1&#x27; YEAR_MONTH) AS col6 #需要单引号</span><br><span class="line">FROM DUAL;</span><br></pre></td></tr></table></figure>
 
@@ -2488,7 +2488,7 @@
 </tr>
 </tbody></table>
 <p>GET_FORMAT函数中date_type和format_type参数取值如下：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012145231321.png" alt="image-20211012145231321"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012145231321.png" alt="image-20211012145231321"></p>
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT DATE_FORMAT(NOW(), &#x27;%H:%i:%s&#x27;);</span><br><span class="line">+--------------------------------+</span><br><span class="line">| DATE_FORMAT(NOW(), &#x27;%H:%i:%s&#x27;) |</span><br><span class="line">+--------------------------------+</span><br><span class="line">| 22:57:34                        |</span><br><span class="line">+--------------------------------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
@@ -2543,7 +2543,7 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SELECT last_name, job_id, salary,</span><br><span class="line">       CASE job_id WHEN &#x27;IT_PROG&#x27;  THEN  1.10*salary</span><br><span class="line">                   WHEN &#x27;ST_CLERK&#x27; THEN  1.15*salary</span><br><span class="line">                   WHEN &#x27;SA_REP&#x27;   THEN  1.20*salary</span><br><span class="line">       			   ELSE      salary END     &quot;REVISED_SALARY&quot;</span><br><span class="line">FROM   employees;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554980865631.png" alt="1554980865631"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554980865631.png" alt="1554980865631"></p>
 <p><strong>练习：查询部门号为 10,20, 30 的员工信息, 若部门号为 10, 则打印其工资的 1.1 倍, 20 号部门, 则打印其工资的 1.2 倍, 30 号部门打印其工资的 1.3 倍数。</strong></p>
 <h2 id="6-加密与解密函数"><a href="#6-加密与解密函数" class="headerlink" title="6. 加密与解密函数"></a>6. 加密与解密函数</h2><p>加密与解密函数主要用于对数据库中的数据进行加密和解密处理，以防止数据被他人窃取。这些函数在保证数据库安全时非常有用。</p>
 <table>
@@ -2682,7 +2682,7 @@
 <li><strong>什么是聚合函数</strong></li>
 </ul>
 <p>聚合函数作用于一组数据，并对一组数据返回一个值。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554980924940.png" alt="1554980924940"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554980924940.png" alt="1554980924940"></p>
 <ul>
 <li><p><strong>聚合函数类型</strong></p>
 <ul>
@@ -2696,30 +2696,30 @@
 <li><p>聚合函数语法</p>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981029920.png" alt="1554981029920"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981029920.png" alt="1554981029920"></p>
 <ul>
 <li>聚合函数不能嵌套调用。比如不能出现类似“AVG(SUM(字段名称))”形式的调用。</li>
 </ul>
 <h3 id="1-1-AVG和SUM函数"><a href="#1-1-AVG和SUM函数" class="headerlink" title="1.1 AVG和SUM函数"></a>1.1 AVG和SUM函数</h3><p>可以对<strong>数值型数据</strong>使用AVG 和 SUM 函数。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">AVG</span>(salary), <span class="built_in">MAX</span>(salary),<span class="built_in">MIN</span>(salary), <span class="built_in">SUM</span>(salary)</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  job_id <span class="keyword">LIKE</span> <span class="string">&#x27;%REP%&#x27;</span>;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981279723.png" alt="1554981279723"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981279723.png" alt="1554981279723"></p>
 <h3 id="1-2-MIN和MAX函数"><a href="#1-2-MIN和MAX函数" class="headerlink" title="1.2 MIN和MAX函数"></a>1.2 MIN和MAX函数</h3><p>可以对<strong>任意数据类型</strong>的数据使用 MIN 和 MAX 函数。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">MIN</span>(hire_date), <span class="built_in">MAX</span>(hire_date)</span><br><span class="line"><span class="keyword">FROM</span>	  employees;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981253194.png" alt="1554981253194"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981253194.png" alt="1554981253194"></p>
 <h3 id="1-3-COUNT函数"><a href="#1-3-COUNT函数" class="headerlink" title="1.3 COUNT函数"></a>1.3 COUNT函数</h3><ul>
 <li>COUNT(*)返回表中记录总数，适用于<strong>任意数据类型</strong>。</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="operator">*</span>)</span><br><span class="line"><span class="keyword">FROM</span>	  employees</span><br><span class="line"><span class="keyword">WHERE</span>  department_id <span class="operator">=</span> <span class="number">50</span>;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981241299.png" alt="1554981241299"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981241299.png" alt="1554981241299"></p>
 <ul>
 <li>COUNT(expr) 返回<strong>expr不为空</strong>的记录总数。</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(commission_pct)</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  department_id <span class="operator">=</span> <span class="number">50</span>;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981328678.png" alt="1554981328678"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981328678.png" alt="1554981328678"></p>
 <ul>
 <li><p><strong>问题：用count(*)，count(1)，count(列名)谁好呢?</strong></p>
 <p>其实，对于MyISAM引擎的表是没有区别的。这种引擎内部有一计数器在维护着行数。</p>
@@ -2730,7 +2730,7 @@
 <p>说明：count(*)会统计值为 NULL 的行，而 count(列名)不会统计此列为 NULL 值的行。</p>
 </li>
 </ul>
-<h2 id="2-GROUP-BY"><a href="#2-GROUP-BY" class="headerlink" title="2. GROUP BY"></a>2. GROUP BY</h2><h3 id="2-1-基本使用"><a href="#2-1-基本使用" class="headerlink" title="2.1 基本使用"></a>2.1 基本使用</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981374920.png" alt="1554981374920"></p>
+<h2 id="2-GROUP-BY"><a href="#2-GROUP-BY" class="headerlink" title="2. GROUP BY"></a>2. GROUP BY</h2><h3 id="2-1-基本使用"><a href="#2-1-基本使用" class="headerlink" title="2.1 基本使用"></a>2.1 基本使用</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981374920.png" alt="1554981374920"></p>
 <p><strong>可以使用GROUP BY子句将表中的数据分成若干组</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">column</span>, group_function(<span class="keyword">column</span>)</span><br><span class="line"><span class="keyword">FROM</span> <span class="keyword">table</span></span><br><span class="line">[<span class="keyword">WHERE</span>	<span class="keyword">condition</span>]</span><br><span class="line">[<span class="keyword">GROUP</span> <span class="keyword">BY</span>	group_by_expression]</span><br><span class="line">[<span class="keyword">ORDER</span> <span class="keyword">BY</span>	<span class="keyword">column</span>];</span><br></pre></td></tr></table></figure>
 
@@ -2740,17 +2740,17 @@
 <p><strong>在SELECT列表中所有未包含在组函数中的列都应该包含在 GROUP BY子句中</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>   department_id, <span class="built_in">AVG</span>(salary)</span><br><span class="line"><span class="keyword">FROM</span>     employees</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981539408.png" alt="1554981539408"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981544191.png" alt="1554981544191"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981539408.png" alt="1554981539408"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981544191.png" alt="1554981544191"></p>
 <p>包含在 GROUP BY 子句中的列不必包含在SELECT 列表中</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>   <span class="built_in">AVG</span>(salary)</span><br><span class="line"><span class="keyword">FROM</span>     employees</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981574152.png" alt="1554981574152"></p>
-<h3 id="2-2-使用多个列分组"><a href="#2-2-使用多个列分组" class="headerlink" title="2.2 使用多个列分组"></a>2.2 使用多个列分组</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981607442.png" alt="1554981607442"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981574152.png" alt="1554981574152"></p>
+<h3 id="2-2-使用多个列分组"><a href="#2-2-使用多个列分组" class="headerlink" title="2.2 使用多个列分组"></a>2.2 使用多个列分组</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981607442.png" alt="1554981607442"></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>   department_id dept_id, job_id, <span class="built_in">SUM</span>(salary)</span><br><span class="line"><span class="keyword">FROM</span>     employees</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id, job_id ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981624864.png" alt="1554981624864"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981629733.png" alt="1554981629733"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981624864.png" alt="1554981624864"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981629733.png" alt="1554981629733"></p>
 <h3 id="2-3-GROUP-BY中使用WITH-ROLLUP"><a href="#2-3-GROUP-BY中使用WITH-ROLLUP" class="headerlink" title="2.3 GROUP BY中使用WITH ROLLUP"></a>2.3 GROUP BY中使用WITH ROLLUP</h3><p>使用<code>WITH ROLLUP</code>关键字之后，在所有查询出的分组记录之后增加一条记录，该记录计算查询出的所有记录的总和，即统计记录数量。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT department_id,AVG(salary)</span><br><span class="line">FROM employees</span><br><span class="line">WHERE department_id &gt; 80</span><br><span class="line">GROUP BY department_id WITH ROLLUP;</span><br></pre></td></tr></table></figure>
 
@@ -2758,7 +2758,7 @@
 <p>注意：</p>
 <p>当使用ROLLUP时，不能同时使用ORDER BY子句进行结果排序，即ROLLUP和ORDER BY是互相排斥的。</p>
 </blockquote>
-<h2 id="3-HAVING"><a href="#3-HAVING" class="headerlink" title="3. HAVING"></a>3. HAVING</h2><h3 id="3-1-基本使用"><a href="#3-1-基本使用" class="headerlink" title="3.1 基本使用"></a>3.1 基本使用</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981656798.png" alt="1554981656798"></p>
+<h2 id="3-HAVING"><a href="#3-HAVING" class="headerlink" title="3. HAVING"></a>3. HAVING</h2><h3 id="3-1-基本使用"><a href="#3-1-基本使用" class="headerlink" title="3.1 基本使用"></a>3.1 基本使用</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981656798.png" alt="1554981656798"></p>
 <p><strong>过滤分组：HAVING子句</strong></p>
 <ol>
 <li>行已经被分组。</li>
@@ -2766,16 +2766,16 @@
 <li>满足HAVING 子句中条件的分组将被显示。</li>
 <li>HAVING 不能单独使用，必须要跟 GROUP BY 一起使用。</li>
 </ol>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981808091.png" alt="1554981808091"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981808091.png" alt="1554981808091"></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>   department_id, <span class="built_in">MAX</span>(salary)</span><br><span class="line"><span class="keyword">FROM</span>     employees</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id</span><br><span class="line"><span class="keyword">HAVING</span>   <span class="built_in">MAX</span>(salary)<span class="operator">&gt;</span><span class="number">10000</span> ;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981824564.png" alt="1554981824564"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981824564.png" alt="1554981824564"></p>
 <ul>
 <li><strong>非法使用聚合函数 ： 不能在 WHERE 子句中使用聚合函数。</strong>如下：</li>
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span>   department_id, <span class="built_in">AVG</span>(salary)</span><br><span class="line"><span class="keyword">FROM</span>     employees</span><br><span class="line"><span class="keyword">WHERE</span>    <span class="built_in">AVG</span>(salary) <span class="operator">&gt;</span> <span class="number">8000</span></span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554981724375.png" alt="1554981724375"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554981724375.png" alt="1554981724375"></p>
 <h3 id="3-2-WHERE和HAVING的对比"><a href="#3-2-WHERE和HAVING的对比" class="headerlink" title="3.2 WHERE和HAVING的对比"></a>3.2 WHERE和HAVING的对比</h3><p><strong>区别1：WHERE 可以直接使用表中的字段作为筛选条件，但不能使用分组中的计算函数作为筛选条件；HAVING 必须要与 GROUP BY 配合使用，可以把分组计算的函数和分组字段作为筛选条件。</strong> </p>
 <p>这决定了，在需要对数据进行分组统计的时候，HAVING 可以完成 WHERE 不能完成的任务。这是因为，在查询语法结构中，WHERE 在 GROUP BY 之前，所以无法对分组结果进行筛选。HAVING 在 GROUP BY 之后，可以使用分组字段和分组中的计算函数，对分组的结果集进行筛选，这个功能是 WHERE 无法完成的。另外，WHERE排除的记录不再包括在分组中。</p>
 <p><strong>区别2：如果需要通过连接从关联表中获取需要的数据，WHERE 是先筛选后连接，而 HAVING 是先连接后筛选。</strong> 这一点，就决定了在关联查询中，WHERE 比 HAVING 更高效。因为 WHERE 可以先筛选，用一个筛选后的较小数据集和关联表进行连接，这样占用的资源比较少，执行效率也比较高。HAVING 则需要先把结果集准备好，也就是用未被筛选的数据集进行关联，然后对这个大的数据集进行筛选，这样占用的资源就比较多，执行效率也较低。 </p>
@@ -2810,7 +2810,7 @@
 <p><strong>2.SELECT 语句的执行顺序</strong>（在 MySQL 和 Oracle 中，SELECT 执行顺序基本相同）：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FROM -&gt; WHERE -&gt; GROUP BY -&gt; HAVING -&gt; SELECT 的字段 -&gt; DISTINCT -&gt; ORDER BY -&gt; LIMIT</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1566872301088.png" alt="1566872301088"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1566872301088.png" alt="1566872301088"></p>
 <p>比如你写了一个 SQL 语句，那么它的关键字顺序和执行顺序是下面这样的：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT DISTINCT player_id, player_name, count(*) as num # 顺序 5</span><br><span class="line">FROM player JOIN team ON player.team_id = team.team_id # 顺序 1</span><br><span class="line">WHERE height &gt; 1.80 # 顺序 2</span><br><span class="line">GROUP BY player.team_id # 顺序 3</span><br><span class="line">HAVING num &gt; 2 # 顺序 4</span><br><span class="line">ORDER BY num DESC # 顺序 6</span><br><span class="line">LIMIT 2 # 顺序 7</span><br></pre></td></tr></table></figure>
 
@@ -2835,18 +2835,18 @@
 <hr>
 <p>子查询指一个查询语句嵌套在另一个查询语句内部的查询，这个特性从MySQL 4.1开始引入。</p>
 <p>SQL 中子查询的使用大大增强了 SELECT 查询的能力，因为很多时候查询需要从结果集中获取数据，或者需要从同一个表中先计算得出一个数据结果，然后与这个数据结果（可能是某个标量，也可能是某个集合）进行比较。</p>
-<h2 id="1-需求分析与问题解决"><a href="#1-需求分析与问题解决" class="headerlink" title="1. 需求分析与问题解决"></a>1. 需求分析与问题解决</h2><h3 id="1-1-实际问题"><a href="#1-1-实际问题" class="headerlink" title="1.1 实际问题"></a>1.1 实际问题</h3><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1554991034688.png" alt="1554991034688" style="zoom:80%;">
+<h2 id="1-需求分析与问题解决"><a href="#1-需求分析与问题解决" class="headerlink" title="1. 需求分析与问题解决"></a>1. 需求分析与问题解决</h2><h3 id="1-1-实际问题"><a href="#1-1-实际问题" class="headerlink" title="1.1 实际问题"></a>1.1 实际问题</h3><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991034688.png" alt="1554991034688" style="zoom:80%;">
 
 <p>现有解决方式：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#方式一：</span><br><span class="line">SELECT salary</span><br><span class="line">FROM employees</span><br><span class="line">WHERE last_name = &#x27;Abel&#x27;;</span><br><span class="line"></span><br><span class="line">SELECT last_name,salary</span><br><span class="line">FROM employees</span><br><span class="line">WHERE salary &gt; 11000;</span><br><span class="line"></span><br><span class="line">#方式二：自连接</span><br><span class="line">SELECT e2.last_name,e2.salary</span><br><span class="line">FROM employees e1,employees e2</span><br><span class="line">WHERE e1.last_name = &#x27;Abel&#x27;</span><br><span class="line">AND e1.`salary` &lt; e2.`salary`</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#方式三：子查询</span><br><span class="line">SELECT last_name,salary</span><br><span class="line">FROM employees</span><br><span class="line">WHERE salary &gt; (</span><br><span class="line">		SELECT salary</span><br><span class="line">		FROM employees</span><br><span class="line">		WHERE last_name = &#x27;Abel&#x27;</span><br><span class="line">		);</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554991316599.png" alt="1554991316599"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991316599.png" alt="1554991316599"></p>
 <h3 id="1-2-子查询的基本使用"><a href="#1-2-子查询的基本使用" class="headerlink" title="1.2 子查询的基本使用"></a>1.2 子查询的基本使用</h3><ul>
 <li>子查询的基本语法结构：</li>
 </ul>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554991054388.png" alt="1554991054388"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991054388.png" alt="1554991054388"></p>
 <ul>
 <li>子查询（内查询）在主查询之前一次执行完成。</li>
 <li>子查询的结果被主查询（外查询）使用 。</li>
@@ -2861,12 +2861,12 @@
 <p>我们按内查询的结果返回一条还是多条记录，将子查询分为<code>单行子查询</code>、<code>多行子查询</code>。</p>
 <ul>
 <li><p>单行子查询</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554991538719.png" alt="1554991538719"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991538719.png" alt="1554991538719"></p>
 </li>
 <li><p>多行子查询</p>
 </li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554991555669.png" alt="1554991555669"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991555669.png" alt="1554991555669"></p>
 <p><strong>分类方式2：</strong></p>
 <p>我们按内查询是否被执行多次，将子查询划分为<code>相关(或关联)子查询</code>和<code>不相关(或非关联)子查询</code>。</p>
 <p>子查询从数据表中查询了数据结果，如果这个数据结果只执行一次，然后这个数据结果作为主查询的条件进行执行，那么这样的子查询叫做不相关子查询。</p>
@@ -2904,16 +2904,16 @@
 </tr>
 </tbody></table>
 <h3 id="2-2-代码示例"><a href="#2-2-代码示例" class="headerlink" title="2.2 代码示例"></a>2.2 代码示例</h3><p><strong>题目：查询工资大于149号员工工资的员工的信息</strong></p>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914232952626.png" alt="image-20210914232952626"></p>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210914232935062.png" alt="image-20210914232935062"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914232952626.png" alt="image-20210914232952626"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210914232935062.png" alt="image-20210914232935062"></p>
 <p><strong>题目：返回job_id与141号员工相同，salary比143号员工多的员工姓名，job_id和工资</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> last_name, job_id, salary</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  job_id <span class="operator">=</span>  </span><br><span class="line">                (<span class="keyword">SELECT</span> job_id</span><br><span class="line">                 <span class="keyword">FROM</span>   employees</span><br><span class="line">                 <span class="keyword">WHERE</span>  employee_id <span class="operator">=</span> <span class="number">141</span>)</span><br><span class="line"><span class="keyword">AND</span>    salary <span class="operator">&gt;</span></span><br><span class="line">                (<span class="keyword">SELECT</span> salary</span><br><span class="line">                 <span class="keyword">FROM</span>   employees</span><br><span class="line">                 <span class="keyword">WHERE</span>  employee_id <span class="operator">=</span> <span class="number">143</span>);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554991892770.png" alt="1554991892770"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991892770.png" alt="1554991892770"></p>
 <p><strong>题目：返回公司工资最少的员工的last_name,job_id和salary</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> last_name, job_id, salary</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  salary <span class="operator">=</span> </span><br><span class="line">                (<span class="keyword">SELECT</span> <span class="built_in">MIN</span>(salary)</span><br><span class="line">                 <span class="keyword">FROM</span>   employees);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554991935186.png" alt="1554991935186"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554991935186.png" alt="1554991935186"></p>
 <p><strong>题目：查询与141号或174号员工的manager_id和department_id相同的其他员工的employee_id，manager_id，department_id</strong></p>
 <p>实现方式1：不成对比较</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">SELECT  employee_id, manager_id, department_id</span><br><span class="line">FROM    employees</span><br><span class="line">WHERE   manager_id IN</span><br><span class="line">		  (SELECT  manager_id</span><br><span class="line">                   FROM    employees</span><br><span class="line">                   WHERE   employee_id IN (174,141))</span><br><span class="line">AND     department_id IN </span><br><span class="line">		  (SELECT  department_id</span><br><span class="line">                   FROM    employees</span><br><span class="line">                   WHERE   employee_id IN (174,141))</span><br><span class="line">AND	employee_id NOT IN(174,141);</span><br></pre></td></tr></table></figure>
@@ -2934,13 +2934,13 @@
 
 <h3 id="2-5-子查询中的空值问题"><a href="#2-5-子查询中的空值问题" class="headerlink" title="2.5 子查询中的空值问题"></a>2.5 子查询中的空值问题</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> last_name, job_id</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  job_id <span class="operator">=</span></span><br><span class="line">                (<span class="keyword">SELECT</span> job_id</span><br><span class="line">                 <span class="keyword">FROM</span>   employees</span><br><span class="line">                 <span class="keyword">WHERE</span>  last_name <span class="operator">=</span> <span class="string">&#x27;Haas&#x27;</span>);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992067381.png" alt="1554992067381"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992067381.png" alt="1554992067381"></p>
 <blockquote>
 <p><strong>子查询不返回任何行</strong></p>
 </blockquote>
 <h3 id="2-5-非法使用子查询"><a href="#2-5-非法使用子查询" class="headerlink" title="2.5 非法使用子查询"></a>2.5 非法使用子查询</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> employee_id, last_name</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  salary <span class="operator">=</span></span><br><span class="line">                (<span class="keyword">SELECT</span>   <span class="built_in">MIN</span>(salary)</span><br><span class="line">                 <span class="keyword">FROM</span>     employees</span><br><span class="line">                 <span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992135819.png" alt="1554992135819"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992135819.png" alt="1554992135819"></p>
 <blockquote>
 <p><strong>多行子查询使用单行比较符</strong></p>
 </blockquote>
@@ -2977,12 +2977,12 @@
 <p>体会 ANY 和 ALL 的区别</p>
 </blockquote>
 <h3 id="3-2-代码示例"><a href="#3-2-代码示例" class="headerlink" title="3.2 代码示例"></a>3.2 代码示例</h3><p><strong>题目：返回其它job_id中比job_id为‘IT_PROG’部门任一工资低的员工的员工号、姓名、job_id 以及salary</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992658876.png" alt="1554992658876"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992664594.png" alt="1554992664594"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992668429.png" alt="1554992668429"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992658876.png" alt="1554992658876"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992664594.png" alt="1554992664594"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992668429.png" alt="1554992668429"></p>
 <p><strong>题目：返回其它job_id中比job_id为‘IT_PROG’部门所有工资都低的员工的员工号、姓名、job_id以及salary</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992753654.png" alt="1554992753654"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992759467.png" alt="1554992759467"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992753654.png" alt="1554992753654"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992759467.png" alt="1554992759467"></p>
 <p><strong>题目：查询平均工资最低的部门id</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#方式1：</span><br><span class="line">SELECT department_id</span><br><span class="line">FROM employees</span><br><span class="line">GROUP BY department_id</span><br><span class="line">HAVING AVG(salary) = (</span><br><span class="line">			SELECT MIN(avg_sal)</span><br><span class="line">			FROM (</span><br><span class="line">				SELECT AVG(salary) avg_sal</span><br><span class="line">				FROM employees</span><br><span class="line">				GROUP BY department_id</span><br><span class="line">				) dept_avg_sal</span><br><span class="line">			)</span><br></pre></td></tr></table></figure>
 
@@ -2990,17 +2990,17 @@
 
 <h3 id="3-3-空值问题"><a href="#3-3-空值问题" class="headerlink" title="3.3 空值问题"></a>3.3 空值问题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SELECT last_name</span><br><span class="line">FROM employees</span><br><span class="line">WHERE employee_id NOT IN (</span><br><span class="line">			SELECT manager_id</span><br><span class="line">			FROM employees</span><br><span class="line">			);</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211027195906773.png" alt="image-20211027195906773"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211027195906773.png" alt="image-20211027195906773"></p>
 <h2 id="4-相关子查询"><a href="#4-相关子查询" class="headerlink" title="4. 相关子查询"></a>4. 相关子查询</h2><h3 id="4-1-相关子查询执行流程"><a href="#4-1-相关子查询执行流程" class="headerlink" title="4.1 相关子查询执行流程"></a>4.1 相关子查询执行流程</h3><p>如果子查询的执行依赖于外部查询，通常情况下都是因为子查询中的表用到了外部的表，并进行了条件关联，因此每执行一次外部查询，子查询都要重新计算一次，这样的子查询就称之为<code>关联子查询</code>。</p>
 <p>相关子查询按照一行接一行的顺序执行，主查询的每一行都执行一次子查询。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1554992898234.png" alt="1554992898234" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992898234.png" alt="1554992898234" style="zoom:80%;">
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1554992925281.png" alt="1554992925281" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992925281.png" alt="1554992925281" style="zoom:80%;">
 
 <p>说明：<strong>子查询中使用主查询中的列</strong></p>
 <h3 id="4-2-代码示例"><a href="#4-2-代码示例" class="headerlink" title="4.2 代码示例"></a>4.2 代码示例</h3><p><strong>题目：查询员工中工资大于本部门平均工资的员工的last_name,salary和其department_id</strong></p>
 <p><strong>方式一：相关子查询</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554992986225.png" alt="1554992986225"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554992986225.png" alt="1554992986225"></p>
 <p><strong>方式二：在 FROM 中使用子查询</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> last_name,salary,e1.department_id</span><br><span class="line"><span class="keyword">FROM</span> employees e1,(<span class="keyword">SELECT</span> department_id,<span class="built_in">AVG</span>(salary) dept_avg_sal <span class="keyword">FROM</span> employees <span class="keyword">GROUP</span> <span class="keyword">BY</span> department_id) e2</span><br><span class="line"><span class="keyword">WHERE</span> e1.`department_id` <span class="operator">=</span> e2.department_id</span><br><span class="line"><span class="keyword">AND</span> e2.dept_avg_sal <span class="operator">&lt;</span> e1.`salary`;</span><br></pre></td></tr></table></figure>
 
@@ -3041,7 +3041,7 @@
 <p><strong>题目：查询departments表中，不存在于employees表中的部门的department_id和department_name</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> department_id, department_name</span><br><span class="line"><span class="keyword">FROM</span> departments d</span><br><span class="line"><span class="keyword">WHERE</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> (<span class="keyword">SELECT</span> <span class="string">&#x27;X&#x27;</span></span><br><span class="line">                  <span class="keyword">FROM</span>   employees</span><br><span class="line">                  <span class="keyword">WHERE</span>  department_id <span class="operator">=</span> d.department_id);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554993169269.png" alt="1554993169269"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554993169269.png" alt="1554993169269"></p>
 <h3 id="4-4-相关更新"><a href="#4-4-相关更新" class="headerlink" title="4.4 相关更新"></a>4.4 相关更新</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> table1 alias1</span><br><span class="line"><span class="keyword">SET</span>    <span class="keyword">column</span> <span class="operator">=</span> (<span class="keyword">SELECT</span> expression</span><br><span class="line">                 <span class="keyword">FROM</span>   table2 alias2</span><br><span class="line">                 <span class="keyword">WHERE</span>  alias1.column <span class="operator">=</span> alias2.column);</span><br></pre></td></tr></table></figure>
 
 <p>使用相关子查询依据一个表中的数据更新另一个表的数据。</p>
@@ -3069,7 +3069,7 @@
 <hr>
 <h2 id="1-基础知识"><a href="#1-基础知识" class="headerlink" title="1. 基础知识"></a>1. 基础知识</h2><h3 id="1-1-一条数据存储的过程"><a href="#1-1-一条数据存储的过程" class="headerlink" title="1.1 一条数据存储的过程"></a>1.1 一条数据存储的过程</h3><p><code>存储数据是处理数据的第一步</code>。只有正确地把数据存储起来，我们才能进行有效的处理和分析。否则，只能是一团乱麻，无从下手。</p>
 <p>那么，怎样才能把用户各种经营相关的、纷繁复杂的数据，有序、高效地存储起来呢？ 在 MySQL 中，一个完整的数据存储过程总共有 4 步，分别是创建数据库、确认字段、创建数据表、插入数据。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211007155810920.png" alt="image-20211007155810920"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211007155810920.png" alt="image-20211007155810920"></p>
 <p>我们要先创建一个数据库，而不是直接创建数据表呢？ </p>
 <p>因为从系统架构的层次上看，MySQL 数据库系统从大到小依次是<code>数据库服务器</code>、<code>数据库</code>、<code>数据表</code>、数据表的<code>行与列</code>。 </p>
 <p>MySQL 数据库服务器之前已经安装。所以，我们就从创建数据库开始。</p>
@@ -3270,7 +3270,7 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESC emp;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211016160557995.png" alt="image-20211016160557995"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211016160557995.png" alt="image-20211016160557995"></p>
 <p>MySQL在执行建表语句时，将id字段的类型设置为int(11)，这里的11实际上是int类型指定的显示宽度，默认的显示宽度为11。也可以在创建数据表的时候指定数据的显示宽度。</p>
 <ul>
 <li>创建表举例2：</li>
@@ -3279,13 +3279,13 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESCRIBE dept;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211016160643445.png" alt="image-20211016160643445"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211016160643445.png" alt="image-20211016160643445"></p>
 <blockquote>
 <p>在MySQL 8.x版本中，不再推荐为INT类型指定显示长度，并在未来的版本中可能去掉这样的语法。</p>
 </blockquote>
 <h3 id="3-2-创建方式2"><a href="#3-2-创建方式2" class="headerlink" title="3.2 创建方式2"></a>3.2 创建方式2</h3><ul>
 <li><p>使用 AS subquery 选项，<strong>将创建表和插入数据结合起来</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554997882872.png" alt="1554997882872"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554997882872.png" alt="1554997882872"></p>
 </li>
 <li><p>指定的列和子查询中的列要一一对应</p>
 </li>
@@ -3298,8 +3298,8 @@
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESCRIBE dept80;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554997998148.png" alt="1554997998148"></p>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554998004494.png" alt="1554998004494"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554997998148.png" alt="1554997998148"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554998004494.png" alt="1554998004494"></p>
 <h3 id="3-3-查看数据表结构"><a href="#3-3-查看数据表结构" class="headerlink" title="3.3 查看数据表结构"></a>3.3 查看数据表结构</h3><p>在MySQL中创建好数据表之后，可以查看数据表的结构。MySQL支持使用<code>DESCRIBE/DESC</code>语句查看数据表结构，也支持使用<code>SHOW CREATE TABLE</code>语句查看数据表结构。</p>
 <p>语法格式如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHOW CREATE TABLE 表名\G</span><br></pre></td></tr></table></figure>
@@ -3323,7 +3323,7 @@
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE dept80 </span><br><span class="line">ADD job_id varchar(15);</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1554998139815.png" alt="1554998139815"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1554998139815.png" alt="1554998139815"></p>
 <h3 id="4-2-修改一个列"><a href="#4-2-修改一个列" class="headerlink" title="4.2 修改一个列"></a>4.2 修改一个列</h3><ul>
 <li><p>可以修改列的数据类型，长度、默认值和位置</p>
 </li>
@@ -3441,7 +3441,7 @@
 <ul>
 <li>正例：无符号值可以避免误存负数，且扩大了表示范围。</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211024012735469.png" alt="image-20211024012735469"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211024012735469.png" alt="image-20211024012735469"></p>
 </li>
 </ul>
 <h3 id="拓展2：如何理解清空表、删除表等操作需谨慎？！"><a href="#拓展2：如何理解清空表、删除表等操作需谨慎？！" class="headerlink" title="拓展2：如何理解清空表、删除表等操作需谨慎？！"></a>拓展2：如何理解清空表、删除表等操作需谨慎？！</h3><p><code>表删除</code>操作将把表的定义和表中的数据一起删除，并且MySQL在执行删除操作时，不会有任何的确认信息提示，因此执行删除操时应当慎重。在删除表前，最好对表中的数据进行<code>备份</code>，这样当操作失误时可以对数据进行恢复，以免造成无法挽回的后果。</p>
@@ -3467,7 +3467,7 @@
 <h1 id="第11章-数据处理之增删改"><a href="#第11章-数据处理之增删改" class="headerlink" title="第11章_数据处理之增删改"></a>第11章_数据处理之增删改</h1><p>讲师：尚硅谷-宋红康（江湖人称：康师傅）</p>
 <p>官网：<a target="_blank" rel="noopener" href="http://www.atguigu.com/">http://www.atguigu.com</a></p>
 <hr>
-<h2 id="1-插入数据"><a href="#1-插入数据" class="headerlink" title="1. 插入数据"></a>1. 插入数据</h2><h3 id="1-1-实际问题-1"><a href="#1-1-实际问题-1" class="headerlink" title="1.1 实际问题"></a>1.1 实际问题</h3><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1555425366064.png" alt="1555425366064" style="zoom:80%;">
+<h2 id="1-插入数据"><a href="#1-插入数据" class="headerlink" title="1. 插入数据"></a>1. 插入数据</h2><h3 id="1-1-实际问题-1"><a href="#1-1-实际问题-1" class="headerlink" title="1.1 实际问题"></a>1.1 实际问题</h3><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555425366064.png" alt="1555425366064" style="zoom:80%;">
 
 <p>解决方式：使用 INSERT 语句向表中插入数据。</p>
 <h3 id="1-2-方式1：VALUES的方式添加"><a href="#1-2-方式1：VALUES的方式添加" class="headerlink" title="1.2 方式1：VALUES的方式添加"></a>1.2 方式1：VALUES的方式添加</h3><p>使用这种语法一次只能向表中插入<strong>一条</strong>数据。</p>
@@ -3523,7 +3523,7 @@
 
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> sales_reps(id, name, salary, commission_pct)</span><br><span class="line"><span class="keyword">SELECT</span> employee_id, last_name, salary, commission_pct</span><br><span class="line"><span class="keyword">FROM</span>   employees</span><br><span class="line"><span class="keyword">WHERE</span>  job_id <span class="keyword">LIKE</span> <span class="string">&#x27;%REP%&#x27;</span>;</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-更新数据"><a href="#2-更新数据" class="headerlink" title="2. 更新数据"></a>2. 更新数据</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555425824246.png" alt="1555425824246"></p>
+<h2 id="2-更新数据"><a href="#2-更新数据" class="headerlink" title="2. 更新数据"></a>2. 更新数据</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555425824246.png" alt="1555425824246"></p>
 <ul>
 <li>使用 UPDATE 语句更新数据。语法如下：</li>
 </ul>
@@ -3551,15 +3551,15 @@
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> employees</span><br><span class="line"><span class="keyword">SET</span>    department_id <span class="operator">=</span> <span class="number">55</span></span><br><span class="line"><span class="keyword">WHERE</span>  department_id <span class="operator">=</span> <span class="number">110</span>;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555426069578.png" alt="1555426069578"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555426069578.png" alt="1555426069578"></p>
 <blockquote>
 <p>说明：不存在 55 号部门</p>
 </blockquote>
-<h2 id="3-删除数据"><a href="#3-删除数据" class="headerlink" title="3. 删除数据"></a>3. 删除数据</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555426124751.png" alt="1555426124751"></p>
+<h2 id="3-删除数据"><a href="#3-删除数据" class="headerlink" title="3. 删除数据"></a>3. 删除数据</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555426124751.png" alt="1555426124751"></p>
 <ul>
 <li>使用 DELETE 语句从表中删除数据</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555426162264.png" alt="1555426162264"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555426162264.png" alt="1555426162264"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM table_name [WHERE &lt;condition&gt;];</span><br></pre></td></tr></table></figure>
 
 <p>table_name指定要执行删除操作的表；“[WHERE <condition>]”为可选参数，指定删除条件，如果没有WHERE子句，DELETE语句将删除表中的所有记录。</condition></p>
@@ -3578,7 +3578,7 @@
 </ul>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> departments</span><br><span class="line"><span class="keyword">WHERE</span>       department_id <span class="operator">=</span> <span class="number">60</span>;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555426258516.png" alt="1555426258516"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555426258516.png" alt="1555426258516"></p>
 <blockquote>
 <p>说明：You cannot delete a row that contains a primary key that is used as a foreign key in another table.</p>
 </blockquote>
@@ -3901,7 +3901,7 @@
 <li>FLOAT 表示单精度浮点数；</li>
 <li>DOUBLE 表示双精度浮点数；</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211007173312237.png" alt="image-20211007173312237"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211007173312237.png" alt="image-20211007173312237"></p>
 <ul>
 <li><p>REAL默认就是 DOUBLE。如果你把 SQL 模式设定为启用“<code>REAL_AS_FLOAT</code>”，那 么，MySQL 就认为 REAL 是 FLOAT。如果要启用“REAL_AS_FLOAT”，可以通过以下 SQL 语句实现：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SET sql_mode = “REAL_AS_FLOAT”;</span><br></pre></td></tr></table></figure></li>
@@ -4183,7 +4183,7 @@
 
 <h2 id="7-文本字符串类型"><a href="#7-文本字符串类型" class="headerlink" title="7. 文本字符串类型"></a>7. 文本字符串类型</h2><p>在实际的项目中，我们还经常遇到一种数据，就是字符串数据。</p>
 <p>MySQL中，文本字符串总体上分为<code>CHAR</code>、<code>VARCHAR</code>、<code>TINYTEXT</code>、<code>TEXT</code>、<code>MEDIUMTEXT</code>、<code>LONGTEXT</code>、<code>ENUM</code>、<code>SET</code>等类型。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012003508730.png" alt="image-20211012003508730"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012003508730.png" alt="image-20211012003508730"></p>
 <h3 id="7-1-CHAR与VARCHAR类型"><a href="#7-1-CHAR与VARCHAR类型" class="headerlink" title="7.1 CHAR与VARCHAR类型"></a>7.1 CHAR与VARCHAR类型</h3><p>CHAR和VARCHAR类型都可以存储比较短的字符串。</p>
 <table>
 <thead>
@@ -4491,7 +4491,7 @@
 <p>查询t19表中的数据。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT *</span><br><span class="line">    -&gt; FROM test_json;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211104192516324.png" alt="image-20211104192516324"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211104192516324.png" alt="image-20211104192516324"></p>
 <p>当需要检索JSON类型的字段中数据的某个具体值时，可以使用“-&gt;”和“-&gt;&gt;”符号。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; SELECT js -&gt; &#x27;$.name&#x27; AS NAME,js -&gt; &#x27;$.age&#x27; AS age ,js -&gt; &#x27;$.address.province&#x27; AS province, js -&gt; &#x27;$.address.city&#x27; AS city</span><br><span class="line">    -&gt; FROM test_json;</span><br><span class="line">+----------+------+-----------+-----------+</span><br><span class="line">| NAME     | age  | province  | city      |</span><br><span class="line">+----------+------+-----------+-----------+</span><br><span class="line">| &quot;songhk&quot; | 18   | &quot;beijing&quot; | &quot;beijing&quot; |</span><br><span class="line">+----------+------+-----------+-----------+</span><br><span class="line">1 row in set (0.00 sec)</span><br></pre></td></tr></table></figure>
 
@@ -4507,12 +4507,12 @@
 </li>
 </ul>
 <p>下面展示几种常见的几何图形元素：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211104192912988.png" alt="image-20211104192912988"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211104192912988.png" alt="image-20211104192912988"></p>
 <ul>
 <li>MultiPoint、MultiLineString、MultiPolygon、GeometryCollection 这4种类型都是集合类，是多个Point、LineString或Polygon组合而成。</li>
 </ul>
 <p>下面展示的是多个同类或异类几何图形元素的组合：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211104193330204.png" alt="image-20211104193330204"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211104193330204.png" alt="image-20211104193330204"></p>
 <h2 id="13-小结及选择建议"><a href="#13-小结及选择建议" class="headerlink" title="13. 小结及选择建议"></a>13. 小结及选择建议</h2><p>在定义数据类型时，如果确定是<code>整数</code>，就用<code> INT</code>； 如果是<code>小数</code>，一定用定点数类型 <code>DECIMAL(M,D)</code>； 如果是日期与时间，就用 <code>DATETIME</code>。 </p>
 <p>这样做的好处是，首先确保你的系统不会因为数据类型定义出错。不过，凡事都是有两面的，可靠性好，并不意味着高效。比如，TEXT 虽然使用方便，但是效率不如 CHAR(M) 和 VARCHAR(M)。</p>
 <p>关于字符串的选择，建议参考如下阿里巴巴的《Java开发手册》规范：</p>
@@ -4575,7 +4575,7 @@
 
 
 <h2 id="2-非空约束"><a href="#2-非空约束" class="headerlink" title="2. 非空约束"></a>2. 非空约束</h2><h3 id="2-1-作用"><a href="#2-1-作用" class="headerlink" title="2.1 作用"></a>2.1 作用</h3><p>限定某个字段&#x2F;某列的值不允许为空</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555426972098.png" alt="1555426972098"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555426972098.png" alt="1555426972098"></p>
 <h3 id="2-2-关键字"><a href="#2-2-关键字" class="headerlink" title="2.2 关键字"></a>2.2 关键字</h3><p>NOT NULL</p>
 <h3 id="2-3-特点"><a href="#2-3-特点" class="headerlink" title="2.3 特点"></a>2.3 特点</h3><ul>
 <li><p>默认，所有的类型的值都可以是NULL，包括INT、FLOAT等数据类型</p>
@@ -4613,7 +4613,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE emp</span><br><span class="line">MODIFY NAME VARCHAR(15) DEFAULT &#x27;abc&#x27; NULL;</span><br></pre></td></tr></table></figure>
 
 <h2 id="3-唯一性约束"><a href="#3-唯一性约束" class="headerlink" title="3. 唯一性约束"></a>3. 唯一性约束</h2><h3 id="3-1-作用"><a href="#3-1-作用" class="headerlink" title="3.1 作用"></a>3.1 作用</h3><p>用来限制某个字段&#x2F;某列的值不能重复。</p>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555427198811.png" alt="1555427198811"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555427198811.png" alt="1555427198811"></p>
 <h3 id="3-2-关键字"><a href="#3-2-关键字" class="headerlink" title="3.2 关键字"></a>3.2 关键字</h3><p>UNIQUE</p>
 <h3 id="3-3-特点"><a href="#3-3-特点" class="headerlink" title="3.3 特点"></a>3.3 特点</h3><ul>
 <li>同一个表可以有多个唯一约束。</li>
@@ -4690,7 +4690,7 @@
 <h3 id="4-3-特点"><a href="#4-3-特点" class="headerlink" title="4.3 特点"></a>4.3 特点</h3><ul>
 <li>主键约束相当于<strong>唯一约束+非空约束的组合</strong>，主键约束列不允许重复，也不允许出现空值。</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555427492244.png" alt="1555427492244"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555427492244.png" alt="1555427492244"></p>
 <ul>
 <li><p>一个表最多只能有一个主键约束，建立主键约束可以在列级别创建，也可以在表级别上创建。</p>
 </li>
@@ -4846,7 +4846,7 @@
 <p>MySQL 8.0将自增主键的计数器持久化到<code>重做日志</code>中。每次计数器发生改变，都会将其写入重做日志中。如果数据库重启，InnoDB会根据重做日志中的信息来初始化计数器的内存值。</p>
 <h2 id="6-FOREIGN-KEY-约束"><a href="#6-FOREIGN-KEY-约束" class="headerlink" title="6. FOREIGN KEY 约束"></a>6. FOREIGN KEY 约束</h2><h3 id="6-1-作用"><a href="#6-1-作用" class="headerlink" title="6.1 作用"></a>6.1 作用</h3><p>限定某个表的某个字段的引用完整性。</p>
 <p>比如：员工表的员工所在部门的选择，必须在部门表能找到对应的部分。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555428214706.png" alt="1555428214706"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555428214706.png" alt="1555428214706"></p>
 <h3 id="6-2-关键字"><a href="#6-2-关键字" class="headerlink" title="6.2 关键字"></a>6.2 关键字</h3><p>FOREIGN KEY</p>
 <h3 id="6-3-主表和从表-x2F-父表和子表"><a href="#6-3-主表和从表-x2F-父表和子表" class="headerlink" title="6.3 主表和从表&#x2F;父表和子表"></a>6.3 主表和从表&#x2F;父表和子表</h3><p>主表（父表）：被引用的表，被参考的表</p>
 <p>从表（子表）：引用别人的表，参考别人的表</p>
@@ -5100,14 +5100,14 @@
 <td>相当于一个事件监听器，当数据库发生特定事件后，触发器被触发，完成相应的处理</td>
 </tr>
 </tbody></table>
-<h2 id="2-视图概述"><a href="#2-视图概述" class="headerlink" title="2. 视图概述"></a>2. 视图概述</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/1555430281798.png" alt="1555430281798"></p>
+<h2 id="2-视图概述"><a href="#2-视图概述" class="headerlink" title="2. 视图概述"></a>2. 视图概述</h2><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555430281798.png" alt="1555430281798"></p>
 <h3 id="2-1-为什么使用视图？"><a href="#2-1-为什么使用视图？" class="headerlink" title="2.1 为什么使用视图？"></a>2.1 为什么使用视图？</h3><p>视图一方面可以帮我们使用表的一部分而不是所有的表，另一方面也可以针对不同的用户制定不同的查询视图。比如，针对一个公司的销售人员，我们只想给他看部分数据，而某些特殊的数据，比如采购的价格，则不会提供给他。再比如，人员薪酬是个敏感的字段，那么只给某个级别以上的人员开放，其他人的查询视图中则不提供这个字段。</p>
 <p>刚才讲的只是视图的一个使用场景，实际上视图还有很多作用。最后，我们总结视图的优点。</p>
 <h3 id="2-2-视图的理解"><a href="#2-2-视图的理解" class="headerlink" title="2.2 视图的理解"></a>2.2 视图的理解</h3><ul>
 <li><p>视图是一种<code>虚拟表</code>，本身是<code>不具有数据</code>的，占用很少的内存空间，它是 SQL 中的一个重要概念。</p>
 </li>
 <li><p><strong>视图建立在已有表的基础上</strong>, 视图赖以建立的这些表称为<strong>基表</strong>。</p>
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/image-20211006211206990.png" alt="image-20211006211206990" style="zoom:67%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211006211206990.png" alt="image-20211006211206990" style="zoom:67%;">
 </li>
 <li><p>视图的创建和删除只影响视图本身，不影响对应的基表。但是当对视图中的数据进行增加、删除和修改操作时，数据表中的数据会相应地发生变化，反之亦然。</p>
 </li>
@@ -5135,7 +5135,7 @@
 <p>查询视图：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT *</span><br><span class="line">FROM	salvu80;</span><br></pre></td></tr></table></figure>
 
-<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/1555430882363.png" alt="1555430882363" style="zoom:80%;">
+<img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/1555430882363.png" alt="1555430882363" style="zoom:80%;">
 
 <p>举例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">CREATE VIEW emp_year_salary (ename,year_salary)</span><br><span class="line">AS </span><br><span class="line">SELECT ename,salary*12*(1+IFNULL(commission_pct,0))</span><br><span class="line">FROM t_employee;</span><br></pre></td></tr></table></figure>
@@ -5232,7 +5232,7 @@
 <p>视图跟实际数据表不一样，它存储的是查询语句。所以，在使用的时候，我们要通过定义视图的查询语句来获取结果集。而视图本身不存储数据，不占用数据存储的资源，减少了数据冗余。</p>
 <p><strong>3. 数据安全</strong></p>
 <p>MySQL将用户对数据的<code>访问限制</code>在某些数据的结果集上，而这些数据的结果集可以使用视图来实现。用户不必直接查询或操作数据表。这也可以理解为视图具有<code>隔离性</code>。视图相当于在用户和实际的数据表之间加了一层虚拟表。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211010211744459.png" alt="image-20211010211744459"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211010211744459.png" alt="image-20211010211744459"></p>
 <p>同时，MySQL可以根据权限将用户对数据的访问限制在某些视图上，<strong>用户不需要查询数据表，可以直接通过视图获取数据表中的信息</strong>。这在一定程度上保障了数据表中数据的安全性。</p>
 <p><strong>4. 适应灵活多变的需求</strong><br>当业务系统的需求发生变化后，如果需要改动数据表的结构，则工作量相对较大，可以使用视图来减少改动的工作量。这种方式在实际工作中使用得比较多。</p>
 <p><strong>5. 能够分解复杂的查询逻辑</strong><br>数据库中如果存在复杂的查询逻辑，则可以将问题进行分解，创建多个视图获取数据，再将创建的多个视图结合起来，完成复杂的查询逻辑。</p>
@@ -5521,7 +5521,7 @@
 <h3 id="1-1-系统变量"><a href="#1-1-系统变量" class="headerlink" title="1.1 系统变量"></a>1.1 系统变量</h3><h4 id="1-1-1-系统变量分类"><a href="#1-1-1-系统变量分类" class="headerlink" title="1.1.1 系统变量分类"></a>1.1.1 系统变量分类</h4><p>变量由系统定义，不是用户定义，属于<code>服务器</code>层面。启动MySQL服务，生成MySQL服务实例期间，MySQL将为MySQL服务器内存中的系统变量赋值，这些系统变量定义了当前MySQL服务实例的属性、特征。这些系统变量的值要么是<code>编译MySQL时参数</code>的默认值，要么是<code>配置文件</code>（例如my.ini等）中的参数值。大家可以通过网址 <code>https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html</code> 查看MySQL文档的系统变量。</p>
 <p>系统变量分为全局系统变量（需要添加<code>global</code> 关键字）以及会话系统变量（需要添加 <code>session</code> 关键字），有时也把全局系统变量简称为全局变量，有时也把会话系统变量称为local变量。<strong>如果不写，默认会话级别。</strong>静态变量（在 MySQL 服务实例运行期间它们的值不能使用 set 动态修改）属于特殊的全局系统变量。</p>
 <p>每一个MySQL客户机成功连接MySQL服务器后，都会产生与之对应的会话。会话期间，MySQL服务实例会在MySQL服务器内存中生成与该会话对应的会话系统变量，这些会话系统变量的初始值是全局系统变量值的复制。如下图：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211108114846634.png" alt="image-20211108114846634"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211108114846634.png" alt="image-20211108114846634"></p>
 <ul>
 <li>全局系统变量针对于所有会话（连接）有效，但<code>不能跨重启</code></li>
 <li>会话系统变量仅针对于当前会话（连接）有效。会话期间，当前会话对某个会话系统变量值的修改，不会影响其他会话同一个会话系统变量的值。</li>
@@ -5833,7 +5833,7 @@
 <p>比如，我们查询了 employees 数据表中工资高于15000的员工都有哪些：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT employee_id,last_name,salary FROM employees</span><br><span class="line">WHERE salary &gt; 15000;</span><br></pre></td></tr></table></figure>
 
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211111182656990.png" alt="image-20211111182656990"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211111182656990.png" alt="image-20211111182656990"></p>
 <p>这里我们就可以通过游标来操作数据行，如图所示此时游标所在的行是“108”的记录，我们也可以在结果集上滚动游标，指向结果集中的任意一行。</p>
 <h3 id="4-2-使用游标步骤"><a href="#4-2-使用游标步骤" class="headerlink" title="4.2 使用游标步骤"></a>4.2 使用游标步骤</h3><p>游标必须在声明处理程序之前被声明，并且变量和条件还必须在声明游标或处理程序之前被声明。</p>
 <p>如果我们想要使用游标，一般需要经历四个步骤。不同的 DBMS 中，使用游标的语法可能略有不同。</p>
@@ -5972,9 +5972,9 @@
 
 <h2 id="4-触发器的优缺点"><a href="#4-触发器的优缺点" class="headerlink" title="4. 触发器的优缺点"></a>4. 触发器的优缺点</h2><h3 id="4-1-优点"><a href="#4-1-优点" class="headerlink" title="4.1 优点"></a>4.1 优点</h3><p><strong>1、触发器可以确保数据的完整性</strong>。</p>
 <p>假设我们用<code>进货单头表</code>（demo.importhead）来保存进货单的总体信息，包括进货单编号、供货商编号、仓库编号、总计进货数量、总计进货金额和验收日期。</p>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211010233336012.png" alt="image-20211010233336012"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211010233336012.png" alt="image-20211010233336012"></p>
 <p>用<code>进货单明细表</code>（demo.importdetails）来保存进货商品的明细，包括进货单编号、商品编号、进货数量、进货价格和进货金额。</p>
-<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211010233344125.png" alt="image-20211010233344125"></p>
+<p> <img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211010233344125.png" alt="image-20211010233344125"></p>
 <p>每当我们录入、删除和修改一条进货单明细数据的时候，进货单明细表里的数据就会发生变动。这个时候，在进货单头表中的总计数量和总计金额就必须重新计算，否则，进货单头表中的总计数量和总计金额就不等于进货单明细表中数量合计和金额合计了，这就是数据不一致。</p>
 <p>为了解决这个问题，我们就可以使用触发器，<strong>规定每当进货单明细表有数据插入、修改和删除的操作时，自动触发 2 步操作：</strong></p>
 <p>1）重新计算进货单明细表中的数量合计和金额合计；</p>
@@ -6015,7 +6015,7 @@
 
 <p>Subquery代表子查询，子查询前使用WITH语句将结果集命名为cte_name，在后续的查询中即可使用cte_name进行查询。</p>
 <p><strong>12.窗口函数</strong><br>MySQL 8开始支持窗口函数。在之前的版本中已存在的大部分<code>聚合函数</code>在MySQL 8中也可以作为窗口函数来使用。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20210730165317542.png" alt="image-20210730165317542"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20210730165317542.png" alt="image-20210730165317542"></p>
 <p><strong>13.正则表达式支持</strong><br>MySQL在8.0.4以后的版本中采用支持Unicode的国际化组件库实现正则表达式操作，这种方式不仅能提供完全的Unicode支持，而且是多字节安全编码。MySQL增加了REGEXP_LIKE()、EGEXP_INSTR()、REGEXP_REPLACE()和 REGEXP_SUBSTR()等函数来提升性能。另外，regexp_stack_limit和regexp_time_limit 系统变量能够通过匹配引擎来控制资源消耗。</p>
 <p><strong>14.内部临时表</strong><br><code>TempTable存储引擎取代MEMORY存储引擎成为内部临时表的默认存储引擎</code>。TempTable存储引擎为VARCHAR和VARBINARY列提供高效存储。internal_tmp_mem_storage_engine会话变量定义了内部临时表的存储引擎，可选的值有两个，TempTable和MEMORY，其中TempTable为默认的存储引擎。temptable_max_ram系统配置项定义了TempTable存储引擎可使用的最大内存数量。</p>
 <p><strong>15.日志记录</strong><br>在MySQL 8中错误日志子系统由一系列MySQL组件构成。这些组件的构成由系统变量log_error_services来配置，能够实现日志事件的过滤和写入。</p>
@@ -6067,7 +6067,7 @@
 </ul>
 <p>MySQL官方网站窗口函数的网址为<a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html#function_row-number%E3%80%82">https://dev.mysql.com/doc/refman/8.0/en/window-function-descriptions.html#function_row-number。</a></p>
 <p>窗口函数总体上可以分为序号函数、分布函数、前后函数、首尾函数和其他函数，如下表：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/image-20211012162944536.png" alt="image-20211012162944536"></p>
+<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/image-20211012162944536.png" alt="image-20211012162944536"></p>
 <h3 id="2-3-语法结构"><a href="#2-3-语法结构" class="headerlink" title="2.3 语法结构"></a>2.3 语法结构</h3><p>窗口函数的语法结构是：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">函数 OVER（[PARTITION BY 字段名 ORDER BY 字段名 ASC|DESC]）</span><br></pre></td></tr></table></figure>
 
@@ -6209,7 +6209,7 @@
 
 <p>总之，递归公用表表达式对于查询一个有共同的根节点的树形结构数据，非常有用。它可以不受层级的限制，轻松查出所有节点的数据。如果用其他的查询方式，就比较复杂了。</p>
 <h3 id="3-3-小-结"><a href="#3-3-小-结" class="headerlink" title="3.3 小 结"></a>3.3 小 结</h3><p>公用表表达式的作用是可以替代子查询，而且可以被多次引用。递归公用表表达式对查询有一个共同根节点的树形结构数据非常高效，可以轻松搞定其他查询方式难以处理的查询。</p>
-<h1 id="第19章-写在最后"><a href="#第19章-写在最后" class="headerlink" title="第19章_写在最后"></a>第19章_写在最后</h1><h3 id="分享1"><a href="#分享1" class="headerlink" title="分享1"></a>分享1</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/%E8%87%AA%E5%BE%8Bing.jpg" alt="自律ing"></p>
+<h1 id="第19章-写在最后"><a href="#第19章-写在最后" class="headerlink" title="第19章_写在最后"></a>第19章_写在最后</h1><h3 id="分享1"><a href="#分享1" class="headerlink" title="分享1"></a>分享1</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/05/11/mysqlprimary/%E8%87%AA%E5%BE%8Bing.jpg" alt="自律ing"></p>
 <h3 id="分享2"><a href="#分享2" class="headerlink" title="分享2"></a>分享2</h3><p>如何看待生活上、工作上的冗余、反冗余？</p>
 <p>又如何看待社会的脆弱性？反脆弱性？</p>
 <p>个人如何应对？</p>
