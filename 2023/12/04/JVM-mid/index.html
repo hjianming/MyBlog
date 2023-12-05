@@ -172,7 +172,7 @@
 </li>
 <li><p><strong>Java 虚拟机：跨语言的平台</strong></p>
 <p><strong>Java 虚拟机不和包括 Java 在内的任何语言绑定，它只与”Class 文件”这种特定的二进制文件格式所关联。</strong>无论使用何种语言进行软件开发， 只要能将源文件编译为正确的 Class 文件，那么这种语言就可以在 Java 虚拟机上执行，可以说，统一而强大的 Class 文件结构，就是 Java 虚拟机的基石、桥梁。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201016175037.jpg" alt="中篇_第1章：JVM的平台无关性"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201016175037.jpg" alt="中篇_第1章：JVM的平台无关性"></p>
 <p><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/specs/index.html">https://docs.oracle.com/javase/specs/index.html</a>，所有的 JVM 全部遵守 Java 虚拟机规范，也就是说所有的 JVM 环境都是一样的， 这样一来字节码文件可以在各种 JVM 上进行。</p>
 </li>
 <li><p><strong>想要让一个 Java 程序正确地运行在 JVM 中，Java 源码就是必须要被编译为符合 JVM 规范的字节码</strong></p>
@@ -181,7 +181,7 @@
 <li>javac 是一种能够将 Java 源码编译为字节码的前端编译器。</li>
 <li>javac 编译器在将 Java 源码编译为一个有效的字节码文件过程中经历了 4 个步骤，分别是<strong>词法分析、语法分析、语义分析以及生成字节码。</strong></li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201016175905.jpg" alt="中篇_第1章：JVM结构"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201016175905.jpg" alt="中篇_第1章：JVM结构"></p>
 </li>
 </ol>
 <p>Oracle 的 JDK 软件包括两部分内容：</p>
@@ -189,7 +189,7 @@
 <li>一部分是将 Java 源代码编译成 Java 虚拟机的指令集的编译器。</li>
 <li>另一部分是用于实现 Java 虚拟机的运行时环境。</li>
 </ul>
-<h3 id="Java-的前端编译器"><a href="#Java-的前端编译器" class="headerlink" title="Java 的前端编译器"></a>Java 的前端编译器</h3><p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201016180142.jpg" alt="中篇_第1章：理解执行引擎"></p>
+<h3 id="Java-的前端编译器"><a href="#Java-的前端编译器" class="headerlink" title="Java 的前端编译器"></a>Java 的前端编译器</h3><p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201016180142.jpg" alt="中篇_第1章：理解执行引擎"></p>
 <p>前端编译器 VS 后端编译器</p>
 <p>Java 源代码的编译结果是字节码，那么肯定需要有一种编译器能够将 Java 源码编译为字节码，承担这个重要责任的就是配置在 path 环境变量中的 <strong>javac 编译器</strong>。javac 是一种能够将 Java 源码编译为字节码的<strong>前端编译器</strong>。</p>
 <p>HotSpot VM 并没有强制要求前端编译器只能使用 javac 来编译字节码，其实只要编译结果符合 JVM 规范都可以被 JVM 所识别即可。在 Java 的前端编译器领域，除了 javac 之外，还有一种被大家经常用到的前端编译器，那就是内置在 Eclipse 中的 <strong>ECJ（Eclipse Compiler for Java）编译器</strong>。和 javac 的全量式编译不同，ECJ 是一种增量式编译器。</p>
@@ -213,13 +213,13 @@
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SonTest</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Father</span> <span class="variable">f</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Son</span>();</span><br><span class="line">        System.out.println(f.x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Father</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Father</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.print();</span><br><span class="line">        x = <span class="number">20</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">print</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Father.x = &quot;</span> + x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Son</span> <span class="keyword">extends</span> <span class="title class_">Father</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Son</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.print();</span><br><span class="line">        x = <span class="number">40</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">print</span><span class="params">()</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Son.x = &quot;</span> + x);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201019171539.png" alt="image-20201019171538026"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201019171539.png" alt="image-20201019171538026"></p>
 <h2 id="虚拟机的基石：Class-文件"><a href="#虚拟机的基石：Class-文件" class="headerlink" title="虚拟机的基石：Class 文件"></a>虚拟机的基石：Class 文件</h2><h3 id="字节码文件里是什么？"><a href="#字节码文件里是什么？" class="headerlink" title="字节码文件里是什么？"></a>字节码文件里是什么？</h3><p>源代码经过编译器编译之后便会生成一个字节码文件，字节码是一种二进制的类文件，它的内容是 JVM 的指令，而不像 C、C++ 经由编译器直接生成机器码。</p>
 <h3 id="什么事字节码指令（byte-code）？"><a href="#什么事字节码指令（byte-code）？" class="headerlink" title="什么事字节码指令（byte code）？"></a>什么事字节码指令（byte code）？</h3><p>Java 虚拟机的指令由一个字节长度的、代表着某种特定操作含义的<strong>操作码（opcode）</strong>以及跟随其后的零至多个代表此操作所需参数的<strong>操作数（operand）</strong>所构成。虚拟机中许多指令并不包含操作数，只有一个操作码。</p>
 <p>比如：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201019172026.png" alt="image-20201019172025732"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201019172026.png" alt="image-20201019172025732"></p>
 <h3 id="如何解读供虚拟机解释执行的二进制字节码？"><a href="#如何解读供虚拟机解释执行的二进制字节码？" class="headerlink" title="如何解读供虚拟机解释执行的二进制字节码？"></a>如何解读供虚拟机解释执行的二进制字节码？</h3><p>方式一：一个一个二进制的看，这里用到的是 Notepad++，需要安装一个 HEX-Editor 插件，或者使用 Binary Viewer；</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201019172152.png" alt="image-20201019172151293"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201019172152.png" alt="image-20201019172151293"></p>
 <p>方式二：使用 javap 指令，JDK 自带的反解析工具；</p>
 <p>方式三：使用 IDEA 插件，jclasslib 或 jclasslib bytecode viewer 客户端工具。</p>
 <h2 id="Class-文件结构-1"><a href="#Class-文件结构-1" class="headerlink" title="Class 文件结构"></a>Class 文件结构</h2><ul>
@@ -245,7 +245,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Demo</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">()</span> &#123;</span><br><span class="line">        num = num + <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">return</span> num;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>对应的字节码文件：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201019173446.png" alt="image-20201019173445368"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201019173446.png" alt="image-20201019173445368"></p>
 <p><strong>换句话说，充分理解了每一个字节码文件的细节，自己也可以反编译出 Java 源文件来。</strong></p>
 <ul>
 <li><strong>Class 文件结构概述</strong></li>
@@ -510,7 +510,7 @@
 <li>常量池容量计数值（u2 类型）：从 1 开始，表示常量池中有多少项常量。即 constant_pool_count &#x3D; 1 表示常量池中有 0 个常量项。</li>
 <li>Demo 的值为：</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="https://gitee.com/xlshi/blog_img/raw/master/img/20201019180124.png" alt="image-20201019180123341"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="https://gitee.com/xlshi/blog_img/raw/master/img/20201019180124.png" alt="image-20201019180123341"></p>
 <p>其值为 0x0016，对应的十进制值为 22。</p>
 <p>需要注意的是，这实际上只有 21 项常量。索引为范围是 1-21。为什么呢？</p>
 <blockquote>
@@ -1739,7 +1739,7 @@
 <h3 id="javap-的用法"><a href="#javap-的用法" class="headerlink" title="javap 的用法"></a>javap 的用法</h3><p>javap 的用法格式：javap <options> <classes></classes></options></p>
 <p>其中，classes 就是你要反编译的 Class 文件。</p>
 <p>在命令行中直接输入 javap 或 javap -help 可以看到 javap 的 options 有如下选项：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201020121337.png" alt="image-20201020121336503"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201020121337.png" alt="image-20201020121336503"></p>
 <p>一般常用的是 -v -l -c 三个选项：</p>
 <ul>
 <li><p>javap -l 会输出行号和本地变量表信息</p>
@@ -1826,9 +1826,9 @@
 <p>我们知道，Java 字节码是 Java 虚拟机所使用的指令集。因此，它与 Java 虚拟机基于栈的计算模型是密不可分的。</p>
 <p>在解释执行过程中，每当为 Java 方法分配栈帧时，Java 虚拟机往往需要开辟一块额外的空间作为操作数栈，来存放计算的操作数以及返回结果。</p>
 <p>具体来说便是：执行每一条指令之前，Java 虚拟机要求该指令的操作数已被压入操作数栈中。在执行指令时，Java 虚拟机会将该指令所需的操作数弹出，并且将指令的结果重新压入栈中。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023105040.png" alt="image-20201023105038983"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023105040.png" alt="image-20201023105038983"></p>
 <p>以加法指令 iadd 为例。假设在执行该指令之前，栈顶的两个元素分别为 int 值 1 和 int 值 2，那么 iadd 指令将弹出这两个 int，并将求得的和 int 值为 3 压入栈中。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023105234.png" alt="image-20201023105233678"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023105234.png" alt="image-20201023105233678"></p>
 <p>由于 iadd 指令只消耗栈顶的两个元素，因此，对于离栈顶距离为 2 的元素，即图中的问号，iadd 指令并不关心它是否存在，更加不会对其进行修改。</p>
 <ol start="2">
 <li><strong>局部变量表（Local Variables）</strong></li>
@@ -1836,11 +1836,11 @@
 <p>Java 方法栈帧的另外一个重要组成部分则是局部变量区，字节码程序可以将计算的结果缓存在局部变量区之中。</p>
 <p>实际上，Java 虚拟机将局部变量区当成一个数组，依次存放 this 指针（仅非静态方法），所传入的参数，以及字节码中的局部变量。</p>
 <p>和操作数栈一样，long 类型以及 double 类型的值将占据两个单元，其余类型仅占据一个单元。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023111630.png" alt="image-20201023111629266"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023111630.png" alt="image-20201023111629266"></p>
 <p>举例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">foo</span><span class="params">(<span class="type">long</span> l, <span class="type">float</span> f)</span> &#123;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;Hello, World&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025214235.png" alt="image-20201023112230399"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025214235.png" alt="image-20201023112230399"></p>
 <p>在栈帧中，与性能调优关系最为密切的部分就是局部变量表。局部变量表中的变量也是重要的垃圾回收根节点，只要被局部变量表中直接或间接引用的对象都不会被回收。</p>
 <p>在方法执行时，虚拟机使用局部变量表完成方法的传递。</p>
 <h3 id="局部变量压栈指令"><a href="#局部变量压栈指令" class="headerlink" title="局部变量压栈指令"></a>局部变量压栈指令</h3><p>局部变量压栈指令将给定的局部变量表中的数据压入操作数栈。</p>
@@ -1852,7 +1852,7 @@
 <p>说明：在这里，<code>x</code>的取值表示数据类型。</p>
 <p>指令<code>xload_n</code>表示将第<code>n</code>个局部变量压入操作数栈，比如<code>iload_1、fload_0、aload_0</code>等指令，其中<code>aload_n</code>表示将一个对象引用压栈。</p>
 <p>指令<code>xload</code>通过指定参数的形式，把局部变量压入操作数栈，当使用这个命令时，表示局部变量的数量可能超过了 4 个，比如指令<code>iload、fload</code>等。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025214241.png" alt="image-20201023160540950"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025214241.png" alt="image-20201023160540950"></p>
 <h3 id="常量入栈指令"><a href="#常量入栈指令" class="headerlink" title="常量入栈指令"></a>常量入栈指令</h3><p>常量入栈指令的功能是将常数压入操作数栈，根据数据类型和入栈内容的不同，又可以分为 const 系列、push 系列和 ldc 指令。</p>
 <p><strong>指令 const 系列：</strong>用于对特定的常量入栈，入栈的常量隐含在指令本身里。指令有：<code>iconst_&lt;i&gt;（i 从 -1 到 5）、lconst_&lt;l&gt;（l 从 0 到 1）、fconst_&lt;f&gt;（f 从 0 到 2）、dconst_&lt;d&gt;（d 从 0 到 1）、aconst_null</code></p>
 <p>比如：</p>
@@ -1870,7 +1870,7 @@
 <p>类似的还有 ldc_w，它接收两个 8 位参数，能支持的索引范围大于 ldc。</p>
 <p>如果要压入的元素是 long 或者 double 类型的，则使用 ldc2_w 指令，使用方式都是类似的。</p>
 <p>总结如下：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023162900.png" alt="image-20201023162858985"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023162900.png" alt="image-20201023162858985"></p>
 <h3 id="出栈装入局部变量表指令"><a href="#出栈装入局部变量表指令" class="headerlink" title="出栈装入局部变量表指令"></a>出栈装入局部变量表指令</h3><p>出栈装入局部变量表指令用于将操作数栈中栈顶元素弹出后，装入局部变量表的指定位置，用于给局部变量赋值。</p>
 <p>这类指令主要以 store 的形式存在，比如 xstore （x 为 i、l、f、d、a）、xstore_n（x 为 i、l、f、d、a，n 为 0 至 3）和 pasture（x 为 i、l、f、d、a、b、c、s）。</p>
 <ul>
@@ -1880,7 +1880,7 @@
 </ul>
 <p>一般说来，类似像 store 这样的命令需要带一个参数，用来指明将弹出的元素放在局部变量表的第几个位置。但是，为了尽可能压缩指令大小，使用专门的 istore_1 指令表示将弹出的元素放置在局部变量表第 1 个位置。类似的还有 istore_0、istore_2、istore_3，它们分别表示从操作数栈顶弹出一个元素，存放在局部变量表第 0、2、3 个位置。</p>
 <p>由于局部变量表前几个位置总是非常常用，因此这种做法虽然增加了指令数量，但是可以大大压缩生成的字节码的体积。如果局部变量表很大，需要存储的槽位大于 3，那么可以使用 istore 指令，外加一个参数，用来表示需要存放的槽位位置。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023163834.png" alt="image-20201023163832907"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023163834.png" alt="image-20201023163832907"></p>
 <h2 id="算术指令"><a href="#算术指令" class="headerlink" title="算术指令"></a>算术指令</h2><ol>
 <li><strong>作用</strong></li>
 </ol>
@@ -1899,7 +1899,7 @@
 <ul>
 <li>在每一大类中，都有针对 Java 虚拟机具体数据类型的专用算术指令。但没有直接支持 byte、short、char 和 boolean 类型的算术指令，对于这些数据的运算，都使用 int 类型的指令来处理。此外，在处理 boolean、byte、short 和 char 类型的数组时，也会转换为使用对应的 int 类型的字节码指令来处理。</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023164337.png" alt="image-20201023164335625"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023164337.png" alt="image-20201023164335625"></p>
 <ol start="4">
 <li><strong>运算时的溢出</strong></li>
 </ol>
@@ -1941,7 +1941,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">bar</span><span class="params">(<span class="type">int</span> i)</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> ((i + <span class="number">1</span>) - <span class="number">2</span>) * <span class="number">3</span> / <span class="number">4</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>字节码指令对应的图示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023170604.png" alt="image-20201023170603743"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023170604.png" alt="image-20201023170603743"></p>
 <h3 id="比较指令的说明"><a href="#比较指令的说明" class="headerlink" title="比较指令的说明"></a>比较指令的说明</h3><ul>
 <li>比较指令的作用是比较栈顶两个元素的大小，并将比较结果入栈</li>
 <li>比较指令有：dcmpg、dcmpl、fcmpg、fcmpl、lcmp<ul>
@@ -2050,16 +2050,16 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0 getstatic #8 &lt;java/lang/System.out&gt;</span><br><span class="line">3 ldc #9 &lt;Hello&gt;</span><br><span class="line">5 invokevirtual #10 &lt;java/io/PrintStream.println&gt;</span><br><span class="line">8 return</span><br></pre></td></tr></table></figure>
 
 <p>图示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023182009.png" alt="image-20201023182008186"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023182029.png" alt="image-20201023182028441"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025214304.png" alt="image-20201023182046064"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023182009.png" alt="image-20201023182008186"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023182029.png" alt="image-20201023182028441"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025214304.png" alt="image-20201023182046064"></p>
 <h3 id="数组操作指令"><a href="#数组操作指令" class="headerlink" title="数组操作指令"></a>数组操作指令</h3><p>数组操作指令主要有：xastore 和 xaload 指令。具体为：</p>
 <ul>
 <li>把一个数组元素加载到操作数栈的指令：baload、caload、saload、iaload、laload、faload、daload、aaload</li>
 <li>将一个操作数栈的值存储到数组元素中的指令：bastore、castore、sastore、iastore、lastore、fastore、dastore、aastore</li>
 </ul>
 <p>即：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023182324.png" alt="image-20201023182323185"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023182324.png" alt="image-20201023182323185"></p>
 <ul>
 <li>取数组长度的指令：arraylength<ul>
 <li>该指令弹出栈顶的数组元素，获取数组的长度，将长度压入栈</li>
@@ -2157,7 +2157,7 @@
 <p>条件跳转指令有：ifeq、iflt、ifle、ifne、ifgt、ifge、ifnull、ifnonnull。这些指令都接收两个字节的操作数，用于计算跳转的位置（16 位符号整数作为当前位置的 offset）。</p>
 <p>它们的统一含义为：<strong>弹出栈顶元素，测试它是否满足某一条件，如果满足条件，则跳转到给定位置</strong>。</p>
 <p><strong>具体说明：</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023192148.png" alt="image-20201023192147287"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023192148.png" alt="image-20201023192147287"></p>
 <p><strong>注意：</strong></p>
 <ol>
 <li>与前面运算规则一致</li>
@@ -2173,23 +2173,23 @@
 <p>这类指令有：if_icmped、if_icmpne、if_icmplt、if_icmpgt、if_icmple、if_icmpge、if_acmped 和 if_acmpne</p>
 <p>其中指令助记符加上 “if_” 后，以字符 “i” 开头的指令针对 int 型整数操作（也包括 short 和 byte 类型），以字符 “a” 开头的指令表示对象引用的比较。</p>
 <p><strong>具体说明：</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023192854.png" alt="image-20201023192853356"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023192854.png" alt="image-20201023192853356"></p>
 <p>这些指令都接收两个字节的操作数作为参数，用于计算跳转的位置。同时在执行指令时，栈顶需要准备两个元素进行比较。指令执行完成后，栈顶的这两个元素被清空，且没有任何数据入栈。<strong>如果预设条件成立，则执行跳转，否则，继续执行下一条语句。</strong></p>
 <h3 id="多条件分支跳转"><a href="#多条件分支跳转" class="headerlink" title="多条件分支跳转"></a>多条件分支跳转</h3><p>多条件分支跳转指令是专为 switch-case 语句设计的，主要有 tableswitch 和 lookupswitch。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023193136.png" alt="image-20201023193135710"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023193136.png" alt="image-20201023193135710"></p>
 <p>从助记符上看，两者都是 switch 语句的实现，它们的区别：</p>
 <ul>
 <li>tableswitch 要求<strong>多个条件分支值是连续的</strong>，它内部只存放起始值和终止值，以及若干个跳转偏移量，通过给定的操作数 index，可以立即定位到跳转偏移量位置，<strong>因此效率比较高。</strong></li>
 <li>lookupswitch 内部<strong>存放着各个离散的 case-offset 对</strong>，每次执行都要搜索全部的 case-offset 对，找到匹配的 case 值，并根据对应的 offset 计算跳转地址，<strong>因此效率较低。</strong></li>
 </ul>
 <p>指令 tableswitch 的示意图如下图所示。由于 tableswitch 的 case 值是连续的，因此只需要记录最低值和最高值，以及每一项对应的 offset 偏移量，根据给定的 index 值通过简单的计算即可直接定位到 offset。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023193704.png" alt="image-20201023193702956"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023193704.png" alt="image-20201023193702956"></p>
 <p>指令 lookupswitch 处理的是离散的 case 值，但是出于效率考虑，将 case-offset 对按照 case 值大小排序，给定 index 时，需要查找与 index 相等的 case，获得其 offset，如果找不到则跳转到 default。指令 lookupswitch 如下图所示</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025214323.png" alt="image-20201023193841932"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025214323.png" alt="image-20201023193841932"></p>
 <h3 id="无条件跳转"><a href="#无条件跳转" class="headerlink" title="无条件跳转"></a>无条件跳转</h3><p>目前主要的无条件跳转指令为 goto，指令 goto 接收两个字节的操作数，共同组成一个带符号的整数，<strong>用于指定指令的偏移量，指令执行的目的就是跳转到偏移量给定的位置处。</strong></p>
 <p>如果指令偏移量太大，超过双字节的带符号整数的范围，则可以使用指令 goto_w，它和 goto 有相同的作用，但是它接收 4 个字节的操作数，可以表示更大的地址范围。</p>
 <p>指令 jsr、jsr_w、ret 虽然也是无条件跳转的，但主要用于 try-finally 语句，且已经被虚拟机逐渐废弃，故不在这里介绍这两个指令。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201023194154.png"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201023194154.png"></p>
 <h2 id="异常处理指令"><a href="#异常处理指令" class="headerlink" title="异常处理指令"></a>异常处理指令</h2><h3 id="抛出异常指令"><a href="#抛出异常指令" class="headerlink" title="抛出异常指令"></a>抛出异常指令</h3><ol>
 <li>athrow 指令</li>
 </ol>
@@ -2242,10 +2242,10 @@
 <p>为了保证在方法异常完成时 monitorenter 和 monitorexit 指令依然可以正确配对执行，<strong>编译器会自动产生一个异常处理器，这个异常处理器声明可处理所有的异常</strong>，它的目的就是用来执行 monitorexit 指令。</p>
 <h1 id="类的加载过程详解"><a href="#类的加载过程详解" class="headerlink" title="类的加载过程详解"></a>类的加载过程详解</h1><h2 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h2><p>在 Java 中数据类型分为基本数据类型和引用数据类型。基本数据类型由虚拟机预先定义，引用数据类型则需要进行类的加载。</p>
 <p>按照 Java 虚拟机规范，从 Class 文件到加载到内存中的类，到类卸载出内存位置，它的整个生命周期包括如下七个阶段：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024111217.png" alt="image-20201024111210347"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024111217.png" alt="image-20201024111210347"></p>
 <p>其中，验证、准备、解析 3 个部分统称为链接（Linking）。</p>
 <p>从程序中类的使用过程看：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024111422.png" alt="image-20201024111420862"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024111422.png" alt="image-20201024111420862"></p>
 <h3 id="大厂面试题"><a href="#大厂面试题" class="headerlink" title="大厂面试题"></a>大厂面试题</h3><p>蚂蚁金服：</p>
 <p>描述一下 JVM 加载 Class 文件的原理机制？</p>
 <p>一面：类加载过程</p>
@@ -2290,7 +2290,7 @@
 <ol start="3">
 <li><strong>图示</strong></li>
 </ol>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024113047.png" alt="image-20201024113046003"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024113047.png" alt="image-20201024113046003"></p>
 <p>外部可以通过访问代表 Order 类的 Class 对象来获取 Order 的类数据结构。</p>
 <ol start="4">
 <li><strong>再说明</strong></li>
@@ -2308,7 +2308,7 @@
 <h2 id="过程二：Linking（链接）阶段"><a href="#过程二：Linking（链接）阶段" class="headerlink" title="过程二：Linking（链接）阶段"></a>过程二：Linking（链接）阶段</h2><h3 id="环节1-链接阶段之-Verification-（验证）"><a href="#环节1-链接阶段之-Verification-（验证）" class="headerlink" title="环节1:链接阶段之 Verification （验证）"></a>环节1:链接阶段之 Verification （验证）</h3><p>当类加载到系统后，就开始链接操作，验证是链接操作的第一步。</p>
 <p><strong>它的目的是保证加载的字节码是合法、合理并符合规范的。</strong></p>
 <p>验证的步骤比较复杂，实际要验证的项目也很繁多，大体上 Java 虚拟机需要做以下检查，如图所示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024114116.png" alt="image-20201024114115928"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024114116.png" alt="image-20201024114115928"></p>
 <p><strong>整体说明：</strong></p>
 <p>验证的内容则涵盖了类数据信息的格式验证、语义检查、字节码验证，以及符号引用验证等。</p>
 <ul>
@@ -2344,7 +2344,7 @@
 <h3 id="环节2-链接阶段之-Preparation-（准备）"><a href="#环节2-链接阶段之-Preparation-（准备）" class="headerlink" title="环节2:链接阶段之 Preparation （准备）"></a>环节2:链接阶段之 Preparation （准备）</h3><p>准备阶段（Preparation），简言之，为类的静态变量分配内存，并将其初始化为默认值。</p>
 <p>当一个类验证通过时，虚拟机就会进入准备阶段。在这个阶段，虚拟机就会为这个类分配相应的内存空间，并设置默认初始值。</p>
 <p>Java 虚拟机为各类型变量默认的初始值如表所示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024120659.png" alt="image-20201024120658893"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024120659.png" alt="image-20201024120658893"></p>
 <p>注意：Java 并不支持 boolean 类型，对于 boolean 类型，内部实现是 int，由于 int 的默认值是 0，故对应的，boolean 的默认值就是 false。</p>
 <p>注意：</p>
 <ol>
@@ -2361,7 +2361,7 @@
 <p>符号引用就是一些字面量的引用，和虚拟机的内部数据结构和内存分布无关。比较容理解的就是在 Class 类文件中，通过常量池进行了大量的符号引用。但是在程序实际运行时，只有符号引用是不够的，比如当如下 <code>println()</code> 方法被调用时，系统需要明确知道该方法的位置。</p>
 <p>举例：输出操作 <code>System.out.println()</code> 对应的字节码：</p>
 <p><code>invokevirtual #24 &lt;java/io/PrintStream.println&gt;</code></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024202317.png" alt="image-20201024202315773"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024202317.png" alt="image-20201024202315773"></p>
 <p>以方法为例，Java 虚拟机为每个类都准备了一张方法表，将其所有的方法都列在表中，当需要调用一个类的方法的时候，只要知道这个方法在方法表中的偏移量就可以直接调用该方法。<strong>通过解析操作，符号引用就可以转变为目标方法在类中方法表中的位置，从而使得方法被成功调用。</strong></p>
 <ol start="2">
 <li><strong>小结</strong></li>
@@ -2449,7 +2449,7 @@
 <p>当 Sample 类被加载、链接和初始化后，它的生命周期就开始了。当代表 Sample 类的 Class 对象不再被引用，即不可触及时，Class 对象就会结束生命周期，Sample 类在方法区内的数据也会被卸载，从而结束 Sample 类的生命周期。</p>
 <p><strong>一个类何时结束生命周期，取决于代表它的 Class 对象何时结束生命周期。</strong></p>
 <p><strong>三、具体例子</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201024222947.png" alt="image-20201024222946266"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201024222947.png" alt="image-20201024222946266"></p>
 <p>Loader1 变量和 obj 变量间接应用代表 Sample 类的 Class 对象，而 objClass 变量则直接引用它。</p>
 <p>如果程序运行过程中，将上图左侧三个引用变量都置为 null，此时 Sample 对象结束生命周期，MyClassLoader 对象结束生命周期，代表 Sample 类的 Class 对象也结束生命周期，Sample 类在方法区内的二进制数据<strong>被卸载</strong>。</p>
 <p>当再次有需要时，会检查 Sample 类的 Class 对象是否存在，如果存在会直接使用，不再重新加载；如果不存在 Sample 类会被重新加载，在 Java 虚拟机的堆区会生成一个新的代表 Sample 类的 Class 实例（可以通过哈希码查看是否是同一个实例）。</p>
@@ -2472,7 +2472,7 @@
 <h1 id="再谈类的加载器"><a href="#再谈类的加载器" class="headerlink" title="再谈类的加载器"></a>再谈类的加载器</h1><h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><p>类加载器是 JVM 执行类加载机制的前提。</p>
 <p>ClassLoader 的作用：</p>
 <p>ClassLoader 是 Java 的核心组件，所有的 Class 都是由 ClassLoader 进行加载的，ClassLoader 负责通过各种方式将 Class 信息的二进制数据流读入 JVM 内部，转换为一个与目标类对应的 java.lang.Class 对象实例。然后交给 Java 虚拟机进行链接、初始化等操作。因此，ClassLoader 在整个装载阶段，只能影响到类的加载，而无法通过 ClassLoader 去改变类的链接和初始化行为。至于它是否可以运行，则由 Execution Engine 决定。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025101156.png" alt="image-20201025101149277"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025101156.png" alt="image-20201025101149277"></p>
 <p>类加载器最早出现在 Java 1.0 版本中，那个时候只是单纯地为了满足 Java Applet 应用而被研发出来，但如今类加载器却在 OSGI、字节码加解密领域大放异彩。这主要归功于 Java 虚拟机的设计者们当初在设计类加载器的时候，并没有考虑将它绑定在 JVM 内部，这样做的好处就是能够更加灵活和动态地执行类加载操作。</p>
 <h3 id="大厂面试题-1"><a href="#大厂面试题-1" class="headerlink" title="大厂面试题"></a>大厂面试题</h3><p><strong>蚂蚁金服：</strong></p>
 <p>深入分析 ClassLoader，双亲委派机制</p>
@@ -2529,7 +2529,7 @@
 </ul>
 <h2 id="复习：类的加载器分类"><a href="#复习：类的加载器分类" class="headerlink" title="复习：类的加载器分类"></a>复习：类的加载器分类</h2><p>JVM 支持两种类型的类加载器，分别为引导类加载器（Bootstrap ClassLoader）和自定义类加载器（User-Defined ClassLoader）。</p>
 <p>从概念上来讲，自定义类加载器一般指的是程序中由开发人员自定义的一类类加载器，但是 Java 虚拟机规范却没有这么定义，而是将所有派生于抽象类 ClassLoader 的类加载器都划分为自定义类加载器。无论类加载器的类型如何划分，在程序中我们最常见的类加载器结构主要是如下情况：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025114009.png" alt="image-20201025114008769"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025114009.png" alt="image-20201025114008769"></p>
 <ul>
 <li>除了顶层的启动类加载器外，其余的类加载器都应当有自己的”父类”加载器。</li>
 <li>不同类加载器看似是继承（Inheritance）关系，实际上是包含关系。在下层加载器中，包含着上层加载器的引用。</li>
@@ -2546,7 +2546,7 @@
 <li>出于安全考虑，Bootstrap 启动类加载器之加载包名为 java、javax、sun 等开头的类</li>
 <li>加载扩展类和应用程序类加载器，并指定为他们的父类加载器</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025114750.png"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025114750.png"></p>
 <p>使用 <code>-XX:+TraceClassLoading</code> 参数</p>
 <p>启动类加载器使用 C++ 编写的？Yes！</p>
 <ul>
@@ -2560,7 +2560,7 @@
 <li>父类加载器为启动类加载器</li>
 <li>从 java.ext.dirs 系统属性所指定的目录中加载类库，或从 JDK 的安装目录的 jre&#x2F;lib&#x2F;ext 子目录下加载类库。如果用户创建的 JAR 放在此目录下，也会自动由扩展类加载器加载</li>
 </ul>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025115134.png" alt="image-20201025115133214"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025115134.png" alt="image-20201025115133214"></p>
 <h3 id="系统类加载器"><a href="#系统类加载器" class="headerlink" title="系统类加载器"></a>系统类加载器</h3><p>应用程序类加载器（系统类加载器，AppClassLoader）</p>
 <ul>
 <li>Java 语言编写，由 sun.misc.Launcher$AppClassLoader 实现</li>
@@ -2588,7 +2588,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">String[] strArr = <span class="keyword">new</span> <span class="title class_">String</span>[<span class="number">6</span>];</span><br><span class="line">System.out.println(strArr.getClass().getClassLoader());</span><br><span class="line"><span class="comment">//运行结果：null</span></span><br><span class="line"></span><br><span class="line">ClassLoaderTest[] test = <span class="keyword">new</span> <span class="title class_">ClassLoaderTest</span>[<span class="number">1</span>];</span><br><span class="line">System.out.println(test.getClass().getClassLoader());</span><br><span class="line"><span class="comment">//运行结果：sun.misc.Launcher$AppClassLoader@18b4aac2</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span>[] inst = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">2</span>];</span><br><span class="line">System.out.println(inst.getClass().getClassLoader());</span><br><span class="line"><span class="comment">//运行结果：null</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="ClassLoader-源码解析"><a href="#ClassLoader-源码解析" class="headerlink" title="ClassLoader 源码解析"></a>ClassLoader 源码解析</h2><p>ClassLoader 与现有类加载的关系：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025121104.png" alt="image-20201025121103649"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025121104.png" alt="image-20201025121103649"></p>
 <p>除了以上虚拟机自带的加载器外，用户还可以定制自己的类加载器。Java 提供了抽象类 java.lang.ClassLoader，所有用户自定义的类加载器都应该继承 ClassLoader 类。</p>
 <h3 id="ClassLoader-的主要方法"><a href="#ClassLoader-的主要方法" class="headerlink" title="ClassLoader 的主要方法"></a>ClassLoader 的主要方法</h3><p>抽象类 ClassLoader 的主要方法：（内部没有抽象方法）</p>
 <ul>
@@ -2649,8 +2649,8 @@
 <li>本质</li>
 </ol>
 <p>规定了类加载的顺序是：引导类加载器先加载，若加载不到，由扩展类加载器加载，若还加载不到，才会由系统类加载器或自定义的类加载器进行加载。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025130802.png" alt="image-20201025130801165"></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025130824.png" alt="image-20201025130823109"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025130802.png" alt="image-20201025130801165"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025130824.png" alt="image-20201025130823109"></p>
 <h3 id="优势与劣势"><a href="#优势与劣势" class="headerlink" title="优势与劣势"></a>优势与劣势</h3><ol>
 <li>双亲委派机制优势</li>
 </ol>
@@ -2700,7 +2700,7 @@
 <p>这并非是不可能出现的事情，一个典型的例子便是 JNDI 服务，JNDI 现在已经是 Java 的标准服务，它的代码由启动类加载器来完成加载（在 JDK 1.3 时加入到 rt.jar），肯定属于 Java 中很基础的类型了。但 JNDI 存在的目的就是对资源进行查找和集中管理，它需要调用由其它厂商实现并部署在应用程序的 ClassPath 下的 JNDI 服务提供者接口（Service Provider Interface. SPI)）的代码，现在问题来了，<strong>启动类加载器时绝对不可能认识、加载这些代码的，那该怎么办？</strong>（SPI：在 Java 平台中，通常把核心类 rt.jar 中提供外部服务、可由应用层自行实现的接口称为 SPI）。</p>
 <p>为了解决这个困境，Java 的设计团队只好引入了一个不太优雅的设计：<strong>线程上下文类加载器（Thread Context ClassLoader）。</strong>这个类加载器可以通过 java.lang.Thread 类的 <code>setContextClassLoader()</code> 方法进行设置，如果创建线程时还未设置，它将会从父线程中继承一个，如果在应用程序的全局范围内都没有设置过的话，那这个类加载器默认就是应用程序类加载器。</p>
 <p>有了线程上下文类加载器，程序就可以做一些”舞弊”的事情了。JNDI 服务使用这个线程上下文类加载器去加载所需的 SPI 服务代码。这是一种父类加载器去请求子类加载器完成类加载的行为，这种行为实际上是打通了双亲委派模型的层次结构来逆向使用类加载器，已经违背了双亲委派模型的一般性原则，但也是无可奈何的事情。Java 中涉及 SPI 的加载基本上都采用这种方式来完成，例如 JNDI、JDBC、JCE、JAXB 和 JBI 等。不过，当 SPI 的服务提供者多于一个的时候，代码就只能根据具体提供者的类型来硬编码判断，为了消除这种极不优雅的方式，在  JDK 6 时，JDK 提供了 java.util.ServiceLoader 类，以 META-INF&#x2F;Services 中的配置信息，辅以责任链模式，这才算是给 SPI 的加载提供了一种相对合理的解决方案。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025150008.png" alt="image-20201025150007226"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025150008.png" alt="image-20201025150007226"></p>
 <p>默认上下文加载器就是应用类加载器，这样以上下文加载器为中介，使得启动类加载器中的代码也可以访问应用类加载器中的类。</p>
 <h4 id="破坏双亲委派机制3"><a href="#破坏双亲委派机制3" class="headerlink" title="破坏双亲委派机制3"></a>破坏双亲委派机制3</h4><p>第三次破坏双亲委派机制：</p>
 <p>双亲委派模型的第三次”被破坏”是由于用户对程序动态性的追求而导致的。如：<strong>代码热替换（Hot Swap）</strong>、<strong>模块热部署（Hot Deployment）</strong>等。</p>
@@ -2723,7 +2723,7 @@
 <p>但对 Java 来说，热替换并非天生就支持，如果一个类已经加载到系统中，通过修改类文件，并无法让系统再来加载并重定义这个类。因此，在 Java 中实现这一功能的一个可行的方法就是灵活运用 ClassLoader。</p>
 <p>注意：由不同 ClassLoader 加载的同名类属于不同的类型，不能相互转换和兼容。即两个不同的 ClassLoader 加载同一个类，在虚拟机内部，会认为这 2 个类是完全不同的。</p>
 <p>根据这个特点，可以用来模拟热替换的实现，基本思路如下图所示：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025151429.png" alt="image-20201025151428041"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025151429.png" alt="image-20201025151428041"></p>
 <h2 id="沙箱安全机制"><a href="#沙箱安全机制" class="headerlink" title="沙箱安全机制"></a>沙箱安全机制</h2><ul>
 <li>保护程序安全</li>
 <li>保护 Java 原生的 JDK 代码</li>
@@ -2731,14 +2731,14 @@
 <p><strong>Java 安全模型的核心就是 Java 沙箱（Sandbox）</strong>，什么是沙箱？沙箱就是一个限制程序运行的环境。</p>
 <p>沙箱机制就是将 Java 代码<strong>限定在虚拟机（JVM）特定的运行范围中，并且严格限制代码对本地系统资源访问。</strong>通过这样的措施来保证对代码的有限隔离，防止对本地系统造成破坏。沙箱主要限制系统资源访问，那系统资源包括什么？CPU、内存、文件系统、网络。不同级别的沙箱对这些资源访问的限制也可以不一样。所有的 Java 程序运行都可以指定沙箱，可以定制安全策略。</p>
 <h3 id="JDK-1-0-时期"><a href="#JDK-1-0-时期" class="headerlink" title="JDK 1.0 时期"></a>JDK 1.0 时期</h3><p>在 Java 中将执行程序分成本地代码和远程代码两种，本地代码默认视为可信任的，而远程代码则被看作是不受信的。对于授信的本地代码，可以访问一切本地资源。而对于非授信的远程代码在早期的 Java 实现中，安全依赖于沙箱（Sandbox）机制。如下图所示 JDK 1.0 安全模型：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025152133.png" alt="image-20201025152132278"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025152133.png" alt="image-20201025152132278"></p>
 <h3 id="JDK-1-1-时期"><a href="#JDK-1-1-时期" class="headerlink" title="JDK 1.1 时期"></a>JDK 1.1 时期</h3><p>JDK 1.0 中如此严格的安全机制也给程序的功能扩展带来障碍，比如当用户希望远程代码访问本地系统的文件时候，就无法实现。因此在后续的 JDK 1.1 版本中，针对安全机制做了改进，增加了安全策略。允许用户指定代码对本地资源的访问权限。如下图所示 JDK 1.1 安全模型：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025152317.png" alt="image-20201025152316421"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025152317.png" alt="image-20201025152316421"></p>
 <h3 id="JDK-1-2-时期"><a href="#JDK-1-2-时期" class="headerlink" title="JDK 1.2 时期"></a>JDK 1.2 时期</h3><p>在 JDK 1.2 版本中，再次改进了安全机制，增加了<strong>代码签名</strong>。不论本地代码或是远程代码，都会按照用户的安全策略设定，由类加载器加载到虚拟机中权限不同的运行空间，来实现差异化的代码执行权限控制。如下图所示 JDK 1.2 安全模型：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025152530.png" alt="image-20201025152529351"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025152530.png" alt="image-20201025152529351"></p>
 <h3 id="JDK-1-6-时期"><a href="#JDK-1-6-时期" class="headerlink" title="JDK 1.6 时期"></a>JDK 1.6 时期</h3><p>当前最新的安全机制实现，则引入了<strong>域（Domain）</strong>的概念。</p>
 <p>虚拟机会把所有代码加载到不同的系统域和应用域。系统域部分专门负责与关键资源进行交互，而各个应用域部分则通过系统域的部分代理来对各种需要的资源进行访问。虚拟机中不同的受保护域（Protected Domain），对应不一样的权限（Permission）。存在于不同域中的类文件就具有了当前域的全部权限，如下图所示，最新的安全模型（JDK 1.6）：</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025152834.png" alt="image-20201025152833261"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025152834.png" alt="image-20201025152833261"></p>
 <h2 id="自定义类的加载器"><a href="#自定义类的加载器" class="headerlink" title="自定义类的加载器"></a>自定义类的加载器</h2><ol>
 <li>为什么要自定义类加载器？</li>
 </ol>
@@ -2807,7 +2807,7 @@
 <li>平台类加载器和应用程序类加载器都不再继承自 java.net.URLClassLoader</li>
 </ol>
 <p>现在启动类加载器、平台类加载器、应用程序类加载器全都继承于 jdk.internal.loader.BuiltinClassLoader。</p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025154838.png" alt="image-20201025154837119"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025154838.png" alt="image-20201025154837119"></p>
 <p>如果有程序直接依赖了这种继承关系，或者依赖了 URLClassLoader 类的特定方法，那代码很可能会在 JDK 9 及更高版本的 JDK 中崩溃。</p>
 <ol start="3">
 <li><p>在 Java 9 中，类加载器有了名称。该名称在构造方法中指定，可以通过 <code>getName()</code> 方法来获取。平台类加载器的名称是 Platform，应用类加载器的名称是 App。<strong>类加载器的名称在调试与类加载器相关的问题时会非常有用。</strong></p>
@@ -2821,7 +2821,7 @@
 <p>当平台及应用程序类加载器收到类加载请求，在委派给父加载器加载前，要先判断该类是否能够归属到某一个系统模块中，如果可以找到这样的归属关系，就要优先委派给负责哪个模块的加载器完成加载。</p>
 </blockquote>
 <p><strong>双亲委派模式示意图</strong></p>
-<p><img src="https://img.zcool.cn/community/0157ba5ebbc1a8a801207200cc1346.gif" data-original="/master/2023/12/04/JVM-mid/20201025155359.png" alt="image-20201025155359046"></p>
+<p><img src="https://img.zcool.cn/community/01d6ab5c61408ba801213f26ad565f.gif" data-original="/master/2023/12/04/JVM-mid/20201025155359.png" alt="image-20201025155359046"></p>
 <p>附加：</p>
 <p>在 Java 模块化系统明确规定了三个类加载器负责各自加载的模块：</p>
 <ul>
